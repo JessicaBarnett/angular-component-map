@@ -5,7 +5,7 @@
             * for each line in the file... 
                 * grab the selector, template path, and component name and store them in `allComponents` 
     
-    ### Get Child Components (slowest part...)
+    ### Get Child Components 
         * for each `.component.html` file `src/app`
             * match filename against templateUrls in `allComponents` to find matching data
             * for each line in file...
@@ -38,9 +38,8 @@ const readline = require('readline');
 const _ = require('lodash');
 
 const selectorRegex = /selector:\s'(.+?)'/;
-const templatePathRegex = /templateUrl:\s'\.\/(.+)'/;  // matches: "  templateUrl: './test-launcher.component.html'," & captures "test-launcher.component.html" in first group
+const templatePathRegex = /templateUrl:\s'(\.\/.+)'/;  // matches: "  templateUrl: './test-launcher.component.html'," & captures "test-launcher.component.html" in first group
 const componentNameRegex = /export\sclass\s(.+?)\s+[i|{|e]/;  // matches "export class MyComponent implements/exends/{" & captures "MyComponent" in 1st group
-
 
 /**
  * Models
@@ -97,8 +96,7 @@ class ComponentDataList {
         return _.sortBy(list, (listItem) => listItem.children.length );
     }
     
-    _createTree(componentData, depth = 0) { // depth is just for debugging
-        // console.log(depth);
+    _createTree(componentData) { // depth is just for debugging
         return _.map(componentData.children, (childName) => { // for each child, get ComponentData
             const childData = this.getDataByName(childName); // get child data
 
@@ -113,7 +111,7 @@ class ComponentDataList {
             }
 
             // else recurse to get the next-level tree for this child 
-            return new TreeNode(childData.name, this._createTree(childData, (depth+1)));
+            return new TreeNode(childData.name, this._createTree(childData));
         });[]
     }
 
@@ -127,15 +125,21 @@ class ComponentDataList {
                         children: node.tree
                     };
                 }), // pulls just 'tree' keys out of top-level 'ComponentData' objects,
-                // _.partialRight(_.reject, (node) => node.children.length === 0), // remove top-level nodes without any children (do we want that?)
+                // _.partialRight(_.reject, (node) => node.children.length === 0), // to remove top-level nodes without any children, if we want that
             )(this.list)
         };
 
         return JSON.stringify(trees, null, 4); // to pretty-print json
     }
 
-    asJson() {
+    // for debugging only
+    _asJson() {
         return JSON.stringify(this.list, null, 4);
+    }
+
+    // for debugging only
+    _find(componentName) {
+        return _.find(this.list, (node) => node.name === componentName);
     }
 };
 
@@ -187,7 +191,13 @@ const fromDir = (startPath, filter, callback, promises = []) => {
     return promises;
 };
 
-const getComponentDataFromControllers = (filename) => {
+const getFullTemplatePath = (fullControllerPath, templatePath) => {
+    const parentPath = /.*(src\/app.*\/)/.exec(fullControllerPath)[1]; // ex: takes `/Users/myuser/relay/rn-v3/server/emerald-portal/src/app/jobs-list/components/jobs-list/jobs-list.component.ts` and captures `/src/app/jobs-list/components/jobs-list/`
+    const fullTemplatePath = templatePath.replace(/^\.\//, parentPath); // replace `./` with parent path.  ex: `./jobs-list.html` becomes `/src/app/jobs-list/components/jobs-list/jobs-list.html`
+    return fullTemplatePath;
+}
+
+const getComponentDataFromController = (filename) => {
     return new Promise((resolve, reject) => {
         const readInterface = readline.createInterface({
             input: fs.createReadStream(filename)
@@ -203,13 +213,12 @@ const getComponentDataFromControllers = (filename) => {
         });
     
         readInterface.on('line', (line) => {
-
             if (!data.selector && selectorRegex.test(line)) {
                 data.selector = selectorRegex.exec(line)[1];
             }
             
             if (!data.templatePath && templatePathRegex.test(line)) {
-                data.templatePath = templatePathRegex.exec(line)[1];
+                data.templatePath = getFullTemplatePath(filename, templatePathRegex.exec(line)[1]);
             }
             
             if (!data.name && componentNameRegex.test(line)) {
@@ -238,6 +247,7 @@ const getChildComponentsFromTemplate = (filename) => {
         });
         
         readInterface.on('line', (line) => {
+            
             let nextResult;
             while ((nextResult = selectorsRegex.exec(line))) { // will be null when there's nothing left
                 const match = allComponents.getDataBySelector(nextResult[1]);
@@ -248,6 +258,7 @@ const getChildComponentsFromTemplate = (filename) => {
         }).on('close', () => {
             if (children.length) {
                 const componentData = allComponents.getDataByTemplate(filename);
+                // if (filename.search('jobs-list/jobs-list.component.html') > 0) { debugger }
                 componentData.children = _.uniq(children);
             }
             resolve();
@@ -263,13 +274,13 @@ const getChildComponentsFromTemplate = (filename) => {
 /**
  * @param {string: 'wire' | 'portal'} app 
  */
-const generateTree = (app) => {
+const buildTree = (app) => {
     const pathToSearch = `/Users/jbarnett/relay/rn-v3/server/emerald-${app}/src/app/`;
     // const pathToSearch = '/Users/jbarnett/relay/rn-v3/server/emerald-portal/src/app/jobs-list'; // limited path for testing
 
     try {
         console.log(`getting component data for {app}...`)
-        const metadataPromises = fromDir(pathToSearch, /\.component.ts$/, getComponentDataFromControllers);
+        const metadataPromises = fromDir(pathToSearch, /\.component.ts$/, getComponentDataFromController);
         Promise.all(metadataPromises)
                 .then(() => {
                     console.log(`finding child components...`)
@@ -285,7 +296,7 @@ const generateTree = (app) => {
                                 console.log(`writing to file...`)
                                 /*  writes data in a hirearchical format to match d3.hirearchy's needs: https://github.com/d3/d3-hierarchy#hierarchy */
                                 fs.writeFile(`./public/data/${app}-data.json`, allComponents.treeAsJson(), () => {
-                                    console.log(`All done!  File written to ${app}-data.json`);
+                                    console.log(`All done!  File written to ./public/data/${app}-data.json`);
                                 });
                             }); 
                 })
@@ -298,5 +309,5 @@ const generateTree = (app) => {
 }
 
 module.exports = {
-    generateTree: generateTree
+    buildTree: buildTree
 }

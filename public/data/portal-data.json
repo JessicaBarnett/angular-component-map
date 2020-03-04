@@ -38,10 +38,6 @@
             "children": []
         },
         {
-            "name": "ProductGroupOnboardingComponent",
-            "children": []
-        },
-        {
             "name": "ProductConsumerPasswordRequiredComponent",
             "children": []
         },
@@ -75,10 +71,6 @@
         },
         {
             "name": "CustomerDetailComponent",
-            "children": []
-        },
-        {
-            "name": "CustomerListComponent",
             "children": []
         },
         {
@@ -122,10 +114,6 @@
             "children": []
         },
         {
-            "name": "JobsListComponent",
-            "children": []
-        },
-        {
             "name": "JobsListDetailComponent",
             "children": []
         },
@@ -146,10 +134,6 @@
             "children": []
         },
         {
-            "name": "JourneyListComponent",
-            "children": []
-        },
-        {
             "name": "InputParamsComponent",
             "children": []
         },
@@ -158,19 +142,11 @@
             "children": []
         },
         {
-            "name": "LauncherListComponent",
-            "children": []
-        },
-        {
             "name": "PrivacyPolicyComponent",
             "children": []
         },
         {
             "name": "TermsAndConditionsComponent",
-            "children": []
-        },
-        {
-            "name": "MediaListComponent",
             "children": []
         },
         {
@@ -231,10 +207,6 @@
         },
         {
             "name": "ColumnSortIconComponent",
-            "children": []
-        },
-        {
-            "name": "EditableListComponent",
             "children": []
         },
         {
@@ -362,18 +334,6 @@
             "children": []
         },
         {
-            "name": "UnassignedComponent",
-            "children": []
-        },
-        {
-            "name": "UserEditComponent",
-            "children": []
-        },
-        {
-            "name": "UserListComponent",
-            "children": []
-        },
-        {
             "name": "UserResetComponent",
             "children": []
         },
@@ -424,7 +384,48 @@
             "name": "CxBuilderComponent",
             "children": [
                 {
-                    "name": "JourneyListComponent"
+                    "name": "JourneyListComponent",
+                    "children": [
+                        {
+                            "name": "SearchableField"
+                        },
+                        {
+                            "name": "ColumnSortIconComponent"
+                        },
+                        {
+                            "name": "JourneySummaryComponent",
+                            "children": [
+                                {
+                                    "name": "SpinnerComponent"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "JourneyDetailsComponent",
+                            "children": [
+                                {
+                                    "name": "SpinnerComponent"
+                                },
+                                {
+                                    "name": "JourneyStepPreviewComponent",
+                                    "children": [
+                                        {
+                                            "name": "StepActionComponent"
+                                        },
+                                        {
+                                            "name": "MessageDialogComponent"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "SpinnerComponent"
+                        },
+                        {
+                            "name": "MessageDialogComponent"
+                        }
+                    ]
                 }
             ]
         },
@@ -432,7 +433,12 @@
             "name": "TriggerInspectorComponent",
             "children": [
                 {
-                    "name": "EditableListComponent"
+                    "name": "EditableListComponent",
+                    "children": [
+                        {
+                            "name": "AutocompleteComponent"
+                        }
+                    ]
                 }
             ]
         },
@@ -443,7 +449,48 @@
                     "name": "CxBuilderComponent",
                     "children": [
                         {
-                            "name": "JourneyListComponent"
+                            "name": "JourneyListComponent",
+                            "children": [
+                                {
+                                    "name": "SearchableField"
+                                },
+                                {
+                                    "name": "ColumnSortIconComponent"
+                                },
+                                {
+                                    "name": "JourneySummaryComponent",
+                                    "children": [
+                                        {
+                                            "name": "SpinnerComponent"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "JourneyDetailsComponent",
+                                    "children": [
+                                        {
+                                            "name": "SpinnerComponent"
+                                        },
+                                        {
+                                            "name": "JourneyStepPreviewComponent",
+                                            "children": [
+                                                {
+                                                    "name": "StepActionComponent"
+                                                },
+                                                {
+                                                    "name": "MessageDialogComponent"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "SpinnerComponent"
+                                },
+                                {
+                                    "name": "MessageDialogComponent"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -507,7 +554,48 @@
                     "name": "CxBuilderComponent",
                     "children": [
                         {
-                            "name": "JourneyListComponent"
+                            "name": "JourneyListComponent",
+                            "children": [
+                                {
+                                    "name": "SearchableField"
+                                },
+                                {
+                                    "name": "ColumnSortIconComponent"
+                                },
+                                {
+                                    "name": "JourneySummaryComponent",
+                                    "children": [
+                                        {
+                                            "name": "SpinnerComponent"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "JourneyDetailsComponent",
+                                    "children": [
+                                        {
+                                            "name": "SpinnerComponent"
+                                        },
+                                        {
+                                            "name": "JourneyStepPreviewComponent",
+                                            "children": [
+                                                {
+                                                    "name": "StepActionComponent"
+                                                },
+                                                {
+                                                    "name": "MessageDialogComponent"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "SpinnerComponent"
+                                },
+                                {
+                                    "name": "MessageDialogComponent"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -568,6 +656,14 @@
             "children": [
                 {
                     "name": "SpinnerComponent"
+                }
+            ]
+        },
+        {
+            "name": "LauncherListComponent",
+            "children": [
+                {
+                    "name": "JourneyListComponent"
                 }
             ]
         },
@@ -660,6 +756,14 @@
             ]
         },
         {
+            "name": "EditableListComponent",
+            "children": [
+                {
+                    "name": "AutocompleteComponent"
+                }
+            ]
+        },
+        {
             "name": "PasswordPreviewComponent",
             "children": [
                 {
@@ -708,10 +812,35 @@
             ]
         },
         {
+            "name": "UnassignedComponent",
+            "children": [
+                {
+                    "name": "SpinnerComponent"
+                }
+            ]
+        },
+        {
             "name": "UserEditPageComponent",
             "children": [
                 {
-                    "name": "UserEditComponent"
+                    "name": "UserEditComponent",
+                    "children": [
+                        {
+                            "name": "SpinnerComponent"
+                        },
+                        {
+                            "name": "TextInputComponent"
+                        },
+                        {
+                            "name": "InputInfoBoxComponent"
+                        },
+                        {
+                            "name": "UserResetComponent"
+                        },
+                        {
+                            "name": "MessageDialogComponent"
+                        }
+                    ]
                 }
             ]
         },
@@ -719,7 +848,27 @@
             "name": "UserListPageComponent",
             "children": [
                 {
-                    "name": "UserListComponent"
+                    "name": "UserListComponent",
+                    "children": [
+                        {
+                            "name": "SearchableField"
+                        },
+                        {
+                            "name": "ColumnSortIconComponent"
+                        },
+                        {
+                            "name": "CheckboxComponent"
+                        },
+                        {
+                            "name": "SpinnerComponent"
+                        },
+                        {
+                            "name": "UserResetComponent"
+                        },
+                        {
+                            "name": "MessageDialogComponent"
+                        }
+                    ]
                 }
             ]
         },
@@ -728,6 +877,76 @@
             "children": [
                 {
                     "name": "ColumnSortIconComponent"
+                },
+                {
+                    "name": "MessageDialogComponent"
+                }
+            ]
+        },
+        {
+            "name": "ProductGroupsEditComponent",
+            "children": [
+                {
+                    "name": "ProductInfoComponent",
+                    "children": [
+                        {
+                            "name": "ClientHeaderComponent"
+                        },
+                        {
+                            "name": "TextInputComponent"
+                        },
+                        {
+                            "name": "InputInfoBoxComponent"
+                        },
+                        {
+                            "name": "HelpTextComponent"
+                        },
+                        {
+                            "name": "ContactInfoInputsComponent"
+                        },
+                        {
+                            "name": "ImageInputComponent",
+                            "children": [
+                                {
+                                    "name": "AddMediaAssetComponent",
+                                    "children": [
+                                        {
+                                            "name": "VideoComponent"
+                                        },
+                                        {
+                                            "name": "UploadComponent"
+                                        },
+                                        {
+                                            "name": "MessageDialogComponent"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ColorPickerComponent"
+                        },
+                        {
+                            "name": "GenericPhoneComponent"
+                        },
+                        {
+                            "name": "WireHeaderComponent"
+                        },
+                        {
+                            "name": "NetworkComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "MessageDialogComponent"
+                }
+            ]
+        },
+        {
+            "name": "ProductGroupsComponent",
+            "children": [
+                {
+                    "name": "ClientHeaderComponent"
                 },
                 {
                     "name": "MessageDialogComponent"
@@ -783,15 +1002,7 @@
                     "name": "SpinnerComponent"
                 },
                 {
-                    "name": "JourneyStepPreviewComponent",
-                    "children": [
-                        {
-                            "name": "StepActionComponent"
-                        },
-                        {
-                            "name": "MessageDialogComponent"
-                        }
-                    ]
+                    "name": "JourneyStepPreviewComponent"
                 }
             ]
         },
@@ -968,7 +1179,48 @@
                                     "name": "CxBuilderComponent",
                                     "children": [
                                         {
-                                            "name": "JourneyListComponent"
+                                            "name": "JourneyListComponent",
+                                            "children": [
+                                                {
+                                                    "name": "SearchableField"
+                                                },
+                                                {
+                                                    "name": "ColumnSortIconComponent"
+                                                },
+                                                {
+                                                    "name": "JourneySummaryComponent",
+                                                    "children": [
+                                                        {
+                                                            "name": "SpinnerComponent"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "JourneyDetailsComponent",
+                                                    "children": [
+                                                        {
+                                                            "name": "SpinnerComponent"
+                                                        },
+                                                        {
+                                                            "name": "JourneyStepPreviewComponent",
+                                                            "children": [
+                                                                {
+                                                                    "name": "StepActionComponent"
+                                                                },
+                                                                {
+                                                                    "name": "MessageDialogComponent"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "SpinnerComponent"
+                                                },
+                                                {
+                                                    "name": "MessageDialogComponent"
+                                                }
+                                            ]
                                         }
                                     ]
                                 },
@@ -1118,7 +1370,12 @@
                     "name": "SpinnerComponent"
                 },
                 {
-                    "name": "EditableListComponent"
+                    "name": "EditableListComponent",
+                    "children": [
+                        {
+                            "name": "AutocompleteComponent"
+                        }
+                    ]
                 },
                 {
                     "name": "MessageDialogComponent"
@@ -1201,73 +1458,6 @@
             ]
         },
         {
-            "name": "ProductOnboardingComponent",
-            "children": [
-                {
-                    "name": "ProductOnboardingComponent",
-                    "children": [
-                        {
-                            "name": "ProductOnboardingComponent"
-                        },
-                        {
-                            "name": "ProductGroupFeaturesComponent",
-                            "children": [
-                                {
-                                    "name": "ClientHeaderComponent"
-                                },
-                                {
-                                    "name": "RadioBtnComponent"
-                                },
-                                {
-                                    "name": "TinyEditorComponent"
-                                },
-                                {
-                                    "name": "GenericPhoneComponent"
-                                },
-                                {
-                                    "name": "PasswordPreviewComponent",
-                                    "children": [
-                                        {
-                                            "name": "BannerPreviewComponent"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "name": "VerificationComponent",
-                            "children": [
-                                {
-                                    "name": "ClientHeaderComponent"
-                                },
-                                {
-                                    "name": "TextInputComponent"
-                                },
-                                {
-                                    "name": "InputInfoBoxComponent"
-                                },
-                                {
-                                    "name": "TinyEditorComponent"
-                                }
-                            ]
-                        },
-                        {
-                            "name": "MessageDialogComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "ProductGroupFeaturesComponent"
-                },
-                {
-                    "name": "VerificationComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
             "name": "VerificationComponent",
             "children": [
                 {
@@ -1281,6 +1471,101 @@
                 },
                 {
                     "name": "TinyEditorComponent"
+                }
+            ]
+        },
+        {
+            "name": "ProductGroupOnboardingComponent",
+            "children": [
+                {
+                    "name": "ProductOnboardingComponent",
+                    "children": [
+                        {
+                            "name": "ClientHeaderComponent"
+                        },
+                        {
+                            "name": "RadioBtnComponent"
+                        },
+                        {
+                            "name": "JourneyListComponent"
+                        },
+                        {
+                            "name": "TinyEditorComponent"
+                        },
+                        {
+                            "name": "GenericPhoneComponent"
+                        },
+                        {
+                            "name": "LoginPreviewComponent",
+                            "children": [
+                                {
+                                    "name": "BannerPreviewComponent"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "ProductGroupFeaturesComponent",
+                    "children": [
+                        {
+                            "name": "ClientHeaderComponent"
+                        },
+                        {
+                            "name": "RadioBtnComponent"
+                        },
+                        {
+                            "name": "TinyEditorComponent"
+                        },
+                        {
+                            "name": "GenericPhoneComponent"
+                        },
+                        {
+                            "name": "PasswordPreviewComponent",
+                            "children": [
+                                {
+                                    "name": "BannerPreviewComponent"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "VerificationComponent",
+                    "children": [
+                        {
+                            "name": "ClientHeaderComponent"
+                        },
+                        {
+                            "name": "TextInputComponent"
+                        },
+                        {
+                            "name": "InputInfoBoxComponent"
+                        },
+                        {
+                            "name": "TinyEditorComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "MessageDialogComponent"
+                }
+            ]
+        },
+        {
+            "name": "CustomerListComponent",
+            "children": [
+                {
+                    "name": "SearchableField"
+                },
+                {
+                    "name": "ColumnSortIconComponent"
+                },
+                {
+                    "name": "SpinnerComponent"
+                },
+                {
+                    "name": "MessageDialogComponent"
                 }
             ]
         },
@@ -1371,7 +1656,48 @@
                     "name": "CxBuilderComponent",
                     "children": [
                         {
-                            "name": "JourneyListComponent"
+                            "name": "JourneyListComponent",
+                            "children": [
+                                {
+                                    "name": "SearchableField"
+                                },
+                                {
+                                    "name": "ColumnSortIconComponent"
+                                },
+                                {
+                                    "name": "JourneySummaryComponent",
+                                    "children": [
+                                        {
+                                            "name": "SpinnerComponent"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "JourneyDetailsComponent",
+                                    "children": [
+                                        {
+                                            "name": "SpinnerComponent"
+                                        },
+                                        {
+                                            "name": "JourneyStepPreviewComponent",
+                                            "children": [
+                                                {
+                                                    "name": "StepActionComponent"
+                                                },
+                                                {
+                                                    "name": "MessageDialogComponent"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "SpinnerComponent"
+                                },
+                                {
+                                    "name": "MessageDialogComponent"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -1526,7 +1852,48 @@
                                             "name": "CxBuilderComponent",
                                             "children": [
                                                 {
-                                                    "name": "JourneyListComponent"
+                                                    "name": "JourneyListComponent",
+                                                    "children": [
+                                                        {
+                                                            "name": "SearchableField"
+                                                        },
+                                                        {
+                                                            "name": "ColumnSortIconComponent"
+                                                        },
+                                                        {
+                                                            "name": "JourneySummaryComponent",
+                                                            "children": [
+                                                                {
+                                                                    "name": "SpinnerComponent"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "JourneyDetailsComponent",
+                                                            "children": [
+                                                                {
+                                                                    "name": "SpinnerComponent"
+                                                                },
+                                                                {
+                                                                    "name": "JourneyStepPreviewComponent",
+                                                                    "children": [
+                                                                        {
+                                                                            "name": "StepActionComponent"
+                                                                        },
+                                                                        {
+                                                                            "name": "MessageDialogComponent"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "SpinnerComponent"
+                                                        },
+                                                        {
+                                                            "name": "MessageDialogComponent"
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         },
@@ -1592,26 +1959,6 @@
                             "name": "BannerPreviewComponent"
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "name": "ProductGroupsEditComponent",
-            "children": [
-                {
-                    "name": "SpinnerComponent"
-                },
-                {
-                    "name": "TextInputComponent"
-                },
-                {
-                    "name": "InputInfoBoxComponent"
-                },
-                {
-                    "name": "UserResetComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
                 }
             ]
         },
@@ -1691,7 +2038,51 @@
                     "name": "TriggerInspectorComponent",
                     "children": [
                         {
-                            "name": "EditableListComponent"
+                            "name": "EditableListComponent",
+                            "children": [
+                                {
+                                    "name": "AutocompleteComponent"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MessageDialogComponent"
+                }
+            ]
+        },
+        {
+            "name": "MediaListComponent",
+            "children": [
+                {
+                    "name": "SearchableField"
+                },
+                {
+                    "name": "ColumnSortIconComponent"
+                },
+                {
+                    "name": "AddMediaAssetComponent",
+                    "children": [
+                        {
+                            "name": "VideoComponent"
+                        },
+                        {
+                            "name": "UploadComponent"
+                        },
+                        {
+                            "name": "MessageDialogComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "EditMediaAssetDetailsComponent",
+                    "children": [
+                        {
+                            "name": "VideoComponent"
+                        },
+                        {
+                            "name": "MessageDialogComponent"
                         }
                     ]
                 },
@@ -1782,25 +2173,50 @@
             ]
         },
         {
-            "name": "ProductGroupsComponent",
+            "name": "UserEditComponent",
             "children": [
                 {
-                    "name": "SearchableField"
-                },
-                {
-                    "name": "ColumnSortIconComponent"
-                },
-                {
-                    "name": "CheckboxComponent"
-                },
-                {
                     "name": "SpinnerComponent"
+                },
+                {
+                    "name": "TextInputComponent"
+                },
+                {
+                    "name": "InputInfoBoxComponent"
                 },
                 {
                     "name": "UserResetComponent"
                 },
                 {
                     "name": "MessageDialogComponent"
+                }
+            ]
+        },
+        {
+            "name": "ProductOnboardingComponent",
+            "children": [
+                {
+                    "name": "ClientHeaderComponent"
+                },
+                {
+                    "name": "RadioBtnComponent"
+                },
+                {
+                    "name": "JourneyListComponent"
+                },
+                {
+                    "name": "TinyEditorComponent"
+                },
+                {
+                    "name": "GenericPhoneComponent"
+                },
+                {
+                    "name": "LoginPreviewComponent",
+                    "children": [
+                        {
+                            "name": "BannerPreviewComponent"
+                        }
+                    ]
                 }
             ]
         },
@@ -1884,6 +2300,42 @@
             ]
         },
         {
+            "name": "JourneyListComponent",
+            "children": [
+                {
+                    "name": "SearchableField"
+                },
+                {
+                    "name": "ColumnSortIconComponent"
+                },
+                {
+                    "name": "JourneySummaryComponent",
+                    "children": [
+                        {
+                            "name": "SpinnerComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "JourneyDetailsComponent",
+                    "children": [
+                        {
+                            "name": "SpinnerComponent"
+                        },
+                        {
+                            "name": "JourneyStepPreviewComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "SpinnerComponent"
+                },
+                {
+                    "name": "MessageDialogComponent"
+                }
+            ]
+        },
+        {
             "name": "SetupAutoResponseComponent",
             "children": [
                 {
@@ -1917,6 +2369,29 @@
             ]
         },
         {
+            "name": "UserListComponent",
+            "children": [
+                {
+                    "name": "SearchableField"
+                },
+                {
+                    "name": "ColumnSortIconComponent"
+                },
+                {
+                    "name": "CheckboxComponent"
+                },
+                {
+                    "name": "SpinnerComponent"
+                },
+                {
+                    "name": "UserResetComponent"
+                },
+                {
+                    "name": "MessageDialogComponent"
+                }
+            ]
+        },
+        {
             "name": "MessagingComponent",
             "children": [
                 {
@@ -1937,7 +2412,12 @@
                     ]
                 },
                 {
-                    "name": "UnassignedComponent"
+                    "name": "UnassignedComponent",
+                    "children": [
+                        {
+                            "name": "SpinnerComponent"
+                        }
+                    ]
                 },
                 {
                     "name": "MessageWindowComponent",
@@ -1967,7 +2447,40 @@
             "name": "ClientOnboardingAndFeatureComponent",
             "children": [
                 {
-                    "name": "JourneyListComponent"
+                    "name": "JourneyListComponent",
+                    "children": [
+                        {
+                            "name": "SearchableField"
+                        },
+                        {
+                            "name": "ColumnSortIconComponent"
+                        },
+                        {
+                            "name": "JourneySummaryComponent",
+                            "children": [
+                                {
+                                    "name": "SpinnerComponent"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "JourneyDetailsComponent",
+                            "children": [
+                                {
+                                    "name": "SpinnerComponent"
+                                },
+                                {
+                                    "name": "JourneyStepPreviewComponent"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "SpinnerComponent"
+                        },
+                        {
+                            "name": "MessageDialogComponent"
+                        }
+                    ]
                 },
                 {
                     "name": "ClientHeaderComponent"
@@ -2060,7 +2573,48 @@
                                                     "name": "CxBuilderComponent",
                                                     "children": [
                                                         {
-                                                            "name": "JourneyListComponent"
+                                                            "name": "JourneyListComponent",
+                                                            "children": [
+                                                                {
+                                                                    "name": "SearchableField"
+                                                                },
+                                                                {
+                                                                    "name": "ColumnSortIconComponent"
+                                                                },
+                                                                {
+                                                                    "name": "JourneySummaryComponent",
+                                                                    "children": [
+                                                                        {
+                                                                            "name": "SpinnerComponent"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "name": "JourneyDetailsComponent",
+                                                                    "children": [
+                                                                        {
+                                                                            "name": "SpinnerComponent"
+                                                                        },
+                                                                        {
+                                                                            "name": "JourneyStepPreviewComponent",
+                                                                            "children": [
+                                                                                {
+                                                                                    "name": "StepActionComponent"
+                                                                                },
+                                                                                {
+                                                                                    "name": "MessageDialogComponent"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "name": "SpinnerComponent"
+                                                                },
+                                                                {
+                                                                    "name": "MessageDialogComponent"
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 },
@@ -2122,7 +2676,12 @@
                             "name": "TriggerInspectorComponent",
                             "children": [
                                 {
-                                    "name": "EditableListComponent"
+                                    "name": "EditableListComponent",
+                                    "children": [
+                                        {
+                                            "name": "AutocompleteComponent"
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -2342,6 +2901,38 @@
                 },
                 {
                     "name": "MessageDialogComponent"
+                }
+            ]
+        },
+        {
+            "name": "JobsListComponent",
+            "children": [
+                {
+                    "name": "SearchInputComponent"
+                },
+                {
+                    "name": "SelectComponent"
+                },
+                {
+                    "name": "TagFilterListComponent"
+                },
+                {
+                    "name": "ListItemExpandableComponent"
+                },
+                {
+                    "name": "StatusComponent"
+                },
+                {
+                    "name": "JobsListDetailComponent"
+                },
+                {
+                    "name": "MessageDialogComponent"
+                },
+                {
+                    "name": "ScheduleLaunchDialogComponent"
+                },
+                {
+                    "name": "SpinnerComponent"
                 }
             ]
         },

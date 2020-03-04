@@ -4,9 +4,10 @@
   "description": "Utility to generate a visual map of all components in an Angular application",
   "main": "main.js",
   "scripts": {
-    "build": "node main.js --rebuild",
-    "serve": "node main.js",
-    "debug": "node inspect main.js "
+    "start": "node main.js --build --serve",
+    "build": "node main.js --build",
+    "serve": "node main.js --serve",
+    "debug": "node inspect main.js --build"
   },
   "author": "Jessica Barnett",
   "license": "ISC",
