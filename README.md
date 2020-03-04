@@ -13,9 +13,10 @@ use one of the 4 scripts in package.json
   - "debug": run this to run the data-building code with `inspect`
 
 ## Bugfix TODO
-1) get rid of 'user/jessica' in the paths in build_trees.js
-2) make sure this works for wire too
-3) make sure sorting is working correctly...
+1) AllJourneysComponent should have children (JourneyListComponent) but does not
+2) get rid of 'user/jessica' in the paths in build_trees.js
+3) make sure this works for wire too
+4) make sure sorting is working correctly...
 
 ## Feature TODO
 1) move the labels with children to the same position as the actual children for better readability
@@ -31,3 +32,4 @@ use one of the 4 scripts in package.json
 3) ensure that we're only catching component classes, not non-component classes that are declared above the @Component decorator
 4) ensure selectors that are similar (ex: 'quick-launch' and 'quick-launch-content') are differentiated 
 5) ensure templates for different components that have similar file names (ex: 'list.component.html' (ProductGroupsComponent) vs 'jobs-list.component.html' (JobsListComponent)) are differentiated
+6) ensure `<app-my-element class="blah">` and `<app-my-element>` both match.  ensure `</app-my-element>` does not. 

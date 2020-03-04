@@ -55,7 +55,7 @@ class ComponentDataList {
     }
 
     /*
-        resulting regex looks like: /<(selector-1|selector-2|selector-3|selector-4|selector-5)\s/g 
+        resulting regex looks like: /<(selector-1|selector-2|selector-3|selector-4|selector-5)[\s|>]/g 
     */
     getSelectorsRegex () {
         const processSelectors = _.flow(
@@ -64,7 +64,7 @@ class ComponentDataList {
             (selectors) => _.join(selectors, '|'), // join selectors together with pipes: my-selector|my-selector-2|my-selector-3
             (joinedSelectors) => _.replace(joinedSelectors, /-/g, '\-') // escape hyphens for RegExp: my\-selector|my\-selector\-2|my\-selector\-3
         );
-        return new RegExp(`<(${processSelectors(this.list)})\\s`, 'g');  // match out to a space, ex: to ensure the entry for 'app-quick-launch' doesn't match 'app-quick-launch-content'
+        return new RegExp(`<(${processSelectors(this.list)})[\\s|>]`, 'g');  // match out to a space, ex: to ensure the entry for 'app-quick-launch' doesn't match 'app-quick-launch-content'
     }
 
     getDataByTemplate (templatePath) {
@@ -72,7 +72,6 @@ class ComponentDataList {
     }
 
     getDataByName (name) {
-        if (name === 'QuickLaunchContentComponent') { console.log('') }
         return _.find(this.list, (data) => data.name === name);
     }
 
@@ -88,11 +87,14 @@ class ComponentDataList {
         this.list = this._sort(this.list);
         for (let i = 0; i < this.list.length; i++) {
             let childData = this.getDataByIndex(i);
-            childData.tree = this._createTree(childData);
-            childData.complete = true;
+            if (childData.name === "ClientImagesNewComponent") { debugger }
+            if (!childData.tree || !childData.tree.length) { // if tree hasn't been established already via recursion... 
+                childData.tree = this._sort(this._createTree(childData));
+            }
         }
     }
 
+    // TODO - make this prettier
     _sort(list) {
         const numberOfChildren = (listItem) => listItem.children ? listItem.children.length : 0; // just return 0 if there are no children to sort by
         const groups = _.groupBy(list, numberOfChildren);  // group by number of children
@@ -109,12 +111,10 @@ class ComponentDataList {
                 return new TreeNode(`${childData.name} (recursive)`); // just say its '(recursive)' and don't bother adding a tree.  
             }
 
-            if (childData.complete) { // if childData is complete, return a node w/ name and copied tree data
-                return new TreeNode(childData.name, childData.tree);
-            } else {
-                childData.complete = true;
+            if (childData.tree && childData.tree.length) { // if childData is complete, return a node w/ name and copied tree data (prevents having to recurse again)
+                return new TreeNode(childData.name, this._sort(childData.tree));
             }
-
+            
             if (!childData.children.length) {// if childData has no children then return a node with just the name
                 return new TreeNode(childData.name);
             }
@@ -122,7 +122,7 @@ class ComponentDataList {
             // else recurse to get the next-level tree for this child 
             const newTree = this._sort(this._createTree(childData));
             return new TreeNode(childData.name, newTree);
-        });[]
+        });
     }
 
     treeAsJson() {
@@ -158,8 +158,6 @@ class ComponentData {
         this.templatePath = templatePath || undefined; // string
         this.controllerPath = controllerPath || undefined; // string
         this.children = children || []; // string[]
-        this.tree = tree || []; // TreeNode[]
-        this.complete = false; // true if the 'tree' key is filled in
         this.recursive = false; // true if the component uses its own selector in its template
     }
 };
@@ -267,10 +265,10 @@ const getChildComponentsFromTemplate = (filename) => {
         });
         
         readInterface.on('line', (line) => {
-            
             let nextResult;
             while ((nextResult = selectorsRegex.exec(line))) { // will be null when there's nothing left
                 const match = allComponents.getDataBySelector(nextResult[1]);
+
                 if (match && match['name'] === componentData['name']) { // if component references its own selector in its template, mark recursive
                     componentData.recursive = true;
                 }
@@ -313,7 +311,6 @@ const buildTree = (app) => {
                         .finally(() => {
                                 console.log(`building trees...`);
                                 allComponents.createTrees();
-
                                 console.log(`writing to file...`)
                                 /*  writes data in a hirearchical format to match d3.hirearchy's needs: https://github.com/d3/d3-hierarchy#hierarchy */
                                 fs.writeFile(`./public/data/${app}-data.json`, allComponents.treeAsJson(), () => {
