@@ -24,3 +24,10 @@ use one of the 4 scripts in package.json
 4) put number of occurances in parens next to the names of components in the top-level
 5) allow passing in a filepath to generate a subtree on-the-fly?
 6) Some kinda testing...
+
+## Test Cases
+1) handle recursive components (ex: PhoneComponent)
+2) ensure sorting by number of children, then by component name alphabetical  
+3) ensure that we're only catching component classes, not non-component classes that are declared above the @Component decorator
+4) ensure selectors that are similar (ex: 'quick-launch' and 'quick-launch-content') are differentiated 
+5) ensure templates for different components that have similar file names (ex: 'list.component.html' (ProductGroupsComponent) vs 'jobs-list.component.html' (JobsListComponent)) are differentiated
