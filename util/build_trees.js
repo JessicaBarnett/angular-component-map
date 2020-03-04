@@ -37,6 +37,7 @@ const fs = require('fs');
 const readline = require('readline');
 const _ = require('lodash');
 
+const componentMetadataRegex = /^.*@Component\(.*$/;
 const selectorRegex = /selector:\s'(.+?)'/;
 const templatePathRegex = /templateUrl:\s'(\.\/.+)'/;  // matches: "  templateUrl: './test-launcher.component.html'," & captures "test-launcher.component.html" in first group
 const componentNameRegex = /export\sclass\s(.+?)\s+[i|{|e]/;  // matches "export class MyComponent implements/exends/{" & captures "MyComponent" in 1st group
@@ -84,7 +85,6 @@ class ComponentDataList {
 
     createTrees() {
         this.list = this._sortByFewestChildren(this.list);
-        debugger
         for (let i = 0; i < this.list.length; i++) {
             let childData = this.getDataByIndex(i);
             childData.tree = this._createTree(childData);
@@ -211,8 +211,18 @@ const getComponentDataFromController = (filename) => {
             children: [],
             tree: []
         });
-    
+
+        let foundComponent = false; // set to true when '@Component(' is found 
+
         readInterface.on('line', (line) => {
+            if (!foundComponent && componentMetadataRegex.test(line)) {
+                foundComponent = true;
+            }
+
+            if (!foundComponent) { // prevents us from getting non-component class names as componentNames
+                return;
+            }
+
             if (!data.selector && selectorRegex.test(line)) {
                 data.selector = selectorRegex.exec(line)[1];
             }

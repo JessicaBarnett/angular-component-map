@@ -13,10 +13,9 @@ use one of the 4 scripts in package.json
   - "debug": run this to run the data-building code with `inspect`
 
 ## Bugfix TODO
-1) note 'DelayUnit' in the tree.  should be 'JourneyDelayComponent'.  Regex to match component names is currently matching class definitions before the @Component metadata block opens.  must fix. 
-2) every time you regenerate data, the json file changes even if the files didn't.  Sort by # of children, and then alphabetically before writing json, to ensure consistent ordering.
-3) get rid of 'user/jessica' in the paths in build_trees.js
-4) make sure this works for wire too
+1) every time you regenerate data, the json file changes even if the files didn't.  Sort by # of children, and then alphabetically before writing json, to ensure consistent ordering.
+2) get rid of 'user/jessica' in the paths in build_trees.js
+3) make sure this works for wire too
 
 ## Feature TODO
 1) move the labels with children to the same position as the actual children for better readability
