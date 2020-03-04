@@ -59,10 +59,10 @@ class ComponentDataList {
     */
     getSelectorsRegex () {
         const processSelectors = _.flow(
-            _.partialRight(_.map, 'selector'), // pluck out 'selector' values
-            _.compact, // remove any components that don't have selectors (there are a couple - AppComponent is one)
-            _.partialRight(_.join, '|'), // join selectors together with pipes: my-selector|my-selector-2|my-selector-3
-            _.partialRight(_.replace, /-/g, '\-'), // escape hyphens for RegExp: my\-selector|my\-selector\-2|my\-selector\-3
+            (listItem) => _.map(listItem, 'selector'), // pluck out 'selector' values
+            (selectors) => _.compact(selectors), // remove any components that don't have selectors (there are a couple - AppComponent is one)
+            (selectors) => _.join(selectors, '|'), // join selectors together with pipes: my-selector|my-selector-2|my-selector-3
+            (joinedSelectors) => _.replace(joinedSelectors, /-/g, '\-') // escape hyphens for RegExp: my\-selector|my\-selector\-2|my\-selector\-3
         );
         return new RegExp(`<(${processSelectors(this.list)})\\s`, 'g');  // match out to a space, ex: to ensure the entry for 'app-quick-launch' doesn't match 'app-quick-launch-content'
     }
@@ -94,10 +94,12 @@ class ComponentDataList {
     }
 
     _sort(list) {
-        return _.flow(
-            (list) => _.sortBy(list, 'name'),
-            (list) => _.sortBy(list, (listItem) => listItem.children.length),
-        )(list); // sort by fewest shildren, and the aplhabetically by name
+        // todo - make this a bit nicer... 
+        const numberOfChildren = (listItem) => listItem.children ? listItem.children.length : 0; // just return 0 if there are no children to sort by
+        const groups = _.groupBy(list, numberOfChildren);
+        const sortedGroups = _.map(groups, (group) => _.sortBy(group, 'name'));
+        const sorted = _.flatten(_.values(sortedGroups));
+        return sorted;
     }
     
     _createTree(componentData) { // depth is just for debugging
@@ -115,22 +117,20 @@ class ComponentDataList {
             }
 
             // else recurse to get the next-level tree for this child 
-            return new TreeNode(childData.name, this._createTree(childData));
+            const newTree = this._sort(this._createTree(childData));
+            return new TreeNode(childData.name, newTree);
         });[]
     }
 
     treeAsJson() {
         const trees = {
             name: "root", // d3 needs a root node to be able to do anything
-            children: _.flow(
-                _.partialRight(_.map, (node) => {
-                    return {
-                        name: node.name, 
-                        children: node.tree
-                    };
-                }), // pulls just 'tree' keys out of top-level 'ComponentData' objects,
-                // _.partialRight(_.reject, (node) => node.children.length === 0), // to remove top-level nodes without any children, if we want that
-            )(this.list)
+            children: _.map(this.list, (node) => { // pulls just 'tree' keys out of top-level 'ComponentData' objects,
+                            return {
+                                name: node.name, 
+                                children: node.tree
+                            };
+                        })
         };
 
         return JSON.stringify(trees, null, 4); // to pretty-print json

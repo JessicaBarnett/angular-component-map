@@ -436,10 +436,13 @@
                     "name": "JourneyListComponent",
                     "children": [
                         {
+                            "name": "ColumnSortIconComponent"
+                        },
+                        {
                             "name": "SearchBarComponent"
                         },
                         {
-                            "name": "ColumnSortIconComponent"
+                            "name": "SpinnerComponent"
                         },
                         {
                             "name": "JourneySummaryComponent",
@@ -448,9 +451,6 @@
                                     "name": "SpinnerComponent"
                                 }
                             ]
-                        },
-                        {
-                            "name": "SpinnerComponent"
                         }
                     ]
                 }
@@ -487,10 +487,10 @@
                     "name": "AddMediaAssetComponent",
                     "children": [
                         {
-                            "name": "VideoComponent"
+                            "name": "UploadComponent"
                         },
                         {
-                            "name": "UploadComponent"
+                            "name": "VideoComponent"
                         }
                     ]
                 }
@@ -514,10 +514,13 @@
                             "name": "JourneyListComponent",
                             "children": [
                                 {
+                                    "name": "ColumnSortIconComponent"
+                                },
+                                {
                                     "name": "SearchBarComponent"
                                 },
                                 {
-                                    "name": "ColumnSortIconComponent"
+                                    "name": "SpinnerComponent"
                                 },
                                 {
                                     "name": "JourneySummaryComponent",
@@ -526,9 +529,6 @@
                                             "name": "SpinnerComponent"
                                         }
                                     ]
-                                },
-                                {
-                                    "name": "SpinnerComponent"
                                 }
                             ]
                         }
@@ -554,15 +554,15 @@
                             "name": "JourneyItemDetailComponent",
                             "children": [
                                 {
+                                    "name": "JourneyItemDetailListViewComponent"
+                                },
+                                {
                                     "name": "JourneyItemDetailGridViewComponent",
                                     "children": [
                                         {
                                             "name": "StepActionComponent"
                                         }
                                     ]
-                                },
-                                {
-                                    "name": "JourneyItemDetailListViewComponent"
                                 }
                             ]
                         }
@@ -593,13 +593,13 @@
                     "name": "JourneyMetadataDialogComponent",
                     "children": [
                         {
-                            "name": "TextInputComponent"
-                        },
-                        {
                             "name": "JourneyMetadataProductSelectComponent"
                         },
                         {
                             "name": "RadioBtnComponent"
+                        },
+                        {
+                            "name": "TextInputComponent"
                         }
                     ]
                 }
@@ -647,10 +647,13 @@
                             "name": "JourneyListComponent",
                             "children": [
                                 {
+                                    "name": "ColumnSortIconComponent"
+                                },
+                                {
                                     "name": "SearchBarComponent"
                                 },
                                 {
-                                    "name": "ColumnSortIconComponent"
+                                    "name": "SpinnerComponent"
                                 },
                                 {
                                     "name": "JourneySummaryComponent",
@@ -659,9 +662,6 @@
                                             "name": "SpinnerComponent"
                                         }
                                     ]
-                                },
-                                {
-                                    "name": "SpinnerComponent"
                                 }
                             ]
                         }
@@ -703,16 +703,25 @@
                             "name": "ClientHeaderComponent"
                         },
                         {
-                            "name": "TextInputComponent"
+                            "name": "ColorPickerComponent"
                         },
                         {
-                            "name": "InputInfoBoxComponent"
+                            "name": "ContactInfoInputsComponent"
                         },
                         {
                             "name": "HelpTextComponent"
                         },
                         {
-                            "name": "ContactInfoInputsComponent"
+                            "name": "InputInfoBoxComponent"
+                        },
+                        {
+                            "name": "NetworkComponent"
+                        },
+                        {
+                            "name": "TextInputComponent"
+                        },
+                        {
+                            "name": "WireHeaderComponent"
                         },
                         {
                             "name": "ImageInputComponent",
@@ -721,23 +730,14 @@
                                     "name": "AddMediaAssetComponent",
                                     "children": [
                                         {
-                                            "name": "VideoComponent"
+                                            "name": "UploadComponent"
                                         },
                                         {
-                                            "name": "UploadComponent"
+                                            "name": "VideoComponent"
                                         }
                                     ]
                                 }
                             ]
-                        },
-                        {
-                            "name": "ColorPickerComponent"
-                        },
-                        {
-                            "name": "WireHeaderComponent"
-                        },
-                        {
-                            "name": "NetworkComponent"
                         }
                     ]
                 }
@@ -787,18 +787,18 @@
                     "name": "PhoneComponent",
                     "children": [
                         {
+                            "name": "BubbleComponent"
+                        },
+                        {
+                            "name": "PhoneComponent"
+                        },
+                        {
                             "name": "WirePreviewComponent",
                             "children": [
                                 {
                                     "name": "VideoComponent"
                                 }
                             ]
-                        },
-                        {
-                            "name": "BubbleComponent"
-                        },
-                        {
-                            "name": "PhoneComponent"
                         }
                     ]
                 }
@@ -819,13 +819,13 @@
                     "name": "UserEditComponent",
                     "children": [
                         {
+                            "name": "InputInfoBoxComponent"
+                        },
+                        {
                             "name": "SpinnerComponent"
                         },
                         {
                             "name": "TextInputComponent"
-                        },
-                        {
-                            "name": "InputInfoBoxComponent"
                         },
                         {
                             "name": "UserResetComponent"
@@ -841,13 +841,13 @@
                     "name": "UserListComponent",
                     "children": [
                         {
-                            "name": "SearchBarComponent"
+                            "name": "CheckboxComponent"
                         },
                         {
                             "name": "ColumnSortIconComponent"
                         },
                         {
-                            "name": "CheckboxComponent"
+                            "name": "SearchBarComponent"
                         },
                         {
                             "name": "SpinnerComponent"
@@ -913,10 +913,10 @@
                             "name": "AddMediaAssetComponent",
                             "children": [
                                 {
-                                    "name": "VideoComponent"
+                                    "name": "UploadComponent"
                                 },
                                 {
-                                    "name": "UploadComponent"
+                                    "name": "VideoComponent"
                                 }
                             ]
                         }
@@ -945,22 +945,22 @@
                     "name": "FileLauncherComponent",
                     "children": [
                         {
-                            "name": "UploadDropAreaComponent"
-                        },
-                        {
-                            "name": "UploadProgressComponent"
-                        },
-                        {
                             "name": "LaunchChoiceComponent"
-                        },
-                        {
-                            "name": "ScheduleLaunchDialogComponent"
                         },
                         {
                             "name": "LaunchResultComponent"
                         },
                         {
                             "name": "MessageDialogComponent"
+                        },
+                        {
+                            "name": "ScheduleLaunchDialogComponent"
+                        },
+                        {
+                            "name": "UploadDropAreaComponent"
+                        },
+                        {
+                            "name": "UploadProgressComponent"
                         }
                     ]
                 }
@@ -1044,9 +1044,6 @@
                     "name": "ProductReportComponent",
                     "children": [
                         {
-                            "name": "WireHeaderComponent"
-                        },
-                        {
                             "name": "NetworkComponent"
                         },
                         {
@@ -1057,6 +1054,9 @@
                         },
                         {
                             "name": "ProductOnboardingFieldsRowComponent"
+                        },
+                        {
+                            "name": "WireHeaderComponent"
                         }
                     ]
                 }
@@ -1266,6 +1266,9 @@
                             "name": "JourneyIconComponent"
                         },
                         {
+                            "name": "MessageDialogComponent"
+                        },
+                        {
                             "name": "PhoneComponent",
                             "children": [
                                 {
@@ -1283,39 +1286,12 @@
                                     "name": "PhoneComponent"
                                 }
                             ]
-                        },
-                        {
-                            "name": "MessageDialogComponent"
                         }
                     ]
                 },
                 {
                     "name": "TestLauncherComponent",
                     "children": [
-                        {
-                            "name": "TriggerSelectorComponent",
-                            "children": [
-                                {
-                                    "name": "PhoneComponent",
-                                    "children": [
-                                        {
-                                            "name": "WirePreviewComponent",
-                                            "children": [
-                                                {
-                                                    "name": "VideoComponent"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "name": "BubbleComponent"
-                                        },
-                                        {
-                                            "name": "PhoneComponent"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
                         {
                             "name": "JourneyLaunchedComponent"
                         },
@@ -1326,10 +1302,13 @@
                                     "name": "JourneyListComponent",
                                     "children": [
                                         {
+                                            "name": "ColumnSortIconComponent"
+                                        },
+                                        {
                                             "name": "SearchBarComponent"
                                         },
                                         {
-                                            "name": "ColumnSortIconComponent"
+                                            "name": "SpinnerComponent"
                                         },
                                         {
                                             "name": "JourneySummaryComponent",
@@ -1338,9 +1317,30 @@
                                                     "name": "SpinnerComponent"
                                                 }
                                             ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "TriggerSelectorComponent",
+                            "children": [
+                                {
+                                    "name": "PhoneComponent",
+                                    "children": [
+                                        {
+                                            "name": "BubbleComponent"
                                         },
                                         {
-                                            "name": "SpinnerComponent"
+                                            "name": "PhoneComponent"
+                                        },
+                                        {
+                                            "name": "WirePreviewComponent",
+                                            "children": [
+                                                {
+                                                    "name": "VideoComponent"
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -1407,18 +1407,18 @@
                             "name": "PhoneComponent",
                             "children": [
                                 {
+                                    "name": "BubbleComponent"
+                                },
+                                {
+                                    "name": "PhoneComponent"
+                                },
+                                {
                                     "name": "WirePreviewComponent",
                                     "children": [
                                         {
                                             "name": "VideoComponent"
                                         }
                                     ]
-                                },
-                                {
-                                    "name": "BubbleComponent"
-                                },
-                                {
-                                    "name": "PhoneComponent"
                                 }
                             ]
                         }
@@ -1434,10 +1434,13 @@
                             "name": "JourneyListComponent",
                             "children": [
                                 {
+                                    "name": "ColumnSortIconComponent"
+                                },
+                                {
                                     "name": "SearchBarComponent"
                                 },
                                 {
-                                    "name": "ColumnSortIconComponent"
+                                    "name": "SpinnerComponent"
                                 },
                                 {
                                     "name": "JourneySummaryComponent",
@@ -1446,9 +1449,6 @@
                                             "name": "SpinnerComponent"
                                         }
                                     ]
-                                },
-                                {
-                                    "name": "SpinnerComponent"
                                 }
                             ]
                         }
@@ -1545,13 +1545,13 @@
                             "name": "BoxMenuComponent"
                         },
                         {
-                            "name": "VideoComponent"
+                            "name": "JourneyMessageComponent"
                         },
                         {
                             "name": "StepActionComponent"
                         },
                         {
-                            "name": "JourneyMessageComponent"
+                            "name": "VideoComponent"
                         }
                     ]
                 }
@@ -1726,15 +1726,15 @@
                                     "name": "JourneyItemDetailComponent",
                                     "children": [
                                         {
+                                            "name": "JourneyItemDetailListViewComponent"
+                                        },
+                                        {
                                             "name": "JourneyItemDetailGridViewComponent",
                                             "children": [
                                                 {
                                                     "name": "StepActionComponent"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "name": "JourneyItemDetailListViewComponent"
                                         }
                                     ]
                                 }
@@ -1911,18 +1911,18 @@
                             "name": "PhoneComponent",
                             "children": [
                                 {
+                                    "name": "BubbleComponent"
+                                },
+                                {
+                                    "name": "PhoneComponent"
+                                },
+                                {
                                     "name": "WirePreviewComponent",
                                     "children": [
                                         {
                                             "name": "VideoComponent"
                                         }
                                     ]
-                                },
-                                {
-                                    "name": "BubbleComponent"
-                                },
-                                {
-                                    "name": "PhoneComponent"
                                 }
                             ]
                         }
@@ -2208,13 +2208,13 @@
                                     "name": "BoxMenuComponent"
                                 },
                                 {
-                                    "name": "VideoComponent"
+                                    "name": "JourneyMessageComponent"
                                 },
                                 {
                                     "name": "StepActionComponent"
                                 },
                                 {
-                                    "name": "JourneyMessageComponent"
+                                    "name": "VideoComponent"
                                 }
                             ]
                         }
@@ -2261,10 +2261,10 @@
                             "name": "AddMediaAssetComponent",
                             "children": [
                                 {
-                                    "name": "VideoComponent"
+                                    "name": "UploadComponent"
                                 },
                                 {
-                                    "name": "UploadComponent"
+                                    "name": "VideoComponent"
                                 }
                             ]
                         }

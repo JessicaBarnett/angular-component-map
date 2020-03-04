@@ -15,6 +15,7 @@ use one of the 4 scripts in package.json
 ## Bugfix TODO
 1) get rid of 'user/jessica' in the paths in build_trees.js
 2) make sure this works for wire too
+3) handle recursive components (ex: PhoneComponent)
 
 ## Feature TODO
 1) move the labels with children to the same position as the actual children for better readability
