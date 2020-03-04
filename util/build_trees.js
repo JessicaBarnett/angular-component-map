@@ -94,10 +94,9 @@ class ComponentDataList {
     }
 
     _sort(list) {
-        // todo - make this a bit nicer... 
         const numberOfChildren = (listItem) => listItem.children ? listItem.children.length : 0; // just return 0 if there are no children to sort by
-        const groups = _.groupBy(list, numberOfChildren);
-        const sortedGroups = _.map(groups, (group) => _.sortBy(group, 'name'));
+        const groups = _.groupBy(list, numberOfChildren);  // group by number of children
+        const sortedGroups = _.map(groups, (group) => _.sortBy(group, 'name')); 
         const sorted = _.flatten(_.values(sortedGroups));
         return sorted;
     }
@@ -105,6 +104,10 @@ class ComponentDataList {
     _createTree(componentData) { // depth is just for debugging
         return _.map(componentData.children, (childName) => { // for each child, get ComponentData
             const childData = this.getDataByName(childName); // get child data
+
+            if (componentData.recursive && childData.name === componentData.name) { // if this is a recursive component inside a recursive component... 
+                return new TreeNode(`${childData.name} (recursive)`); // just say its '(recursive)' and don't bother adding a tree.  
+            }
 
             if (childData.complete) { // if childData is complete, return a node w/ name and copied tree data
                 return new TreeNode(childData.name, childData.tree);
@@ -156,6 +159,8 @@ class ComponentData {
         this.controllerPath = controllerPath || undefined; // string
         this.children = children || []; // string[]
         this.tree = tree || []; // TreeNode[]
+        this.complete = false; // true if the 'tree' key is filled in
+        this.recursive = false; // true if the component uses its own selector in its template
     }
 };
 
@@ -253,6 +258,7 @@ const getComponentDataFromController = (filename) => {
 
 const getChildComponentsFromTemplate = (filename) => {
     let selectorsRegex = allComponents.getSelectorsRegex();
+    const componentData = allComponents.getDataByTemplate(filename);
     const children = [];
 
     return new Promise((resolve) => {
@@ -265,14 +271,15 @@ const getChildComponentsFromTemplate = (filename) => {
             let nextResult;
             while ((nextResult = selectorsRegex.exec(line))) { // will be null when there's nothing left
                 const match = allComponents.getDataBySelector(nextResult[1]);
-                if (match) { // won't get a match if a component doesn't have a selector
+                if (match && match['name'] === componentData['name']) { // if component references its own selector in its template, mark recursive
+                    componentData.recursive = true;
+                }
+                if (match) { // won't get a match if a component doesn't have a selector (ex: AppComponent)
                     children.push(match['name']); 
                 }
             }
         }).on('close', () => {
             if (children.length) {
-                const componentData = allComponents.getDataByTemplate(filename);
-                // if (filename.search('jobs-list/jobs-list.component.html') > 0) { debugger }
                 componentData.children = _.uniq(children);
             }
             resolve();

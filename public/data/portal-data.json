@@ -790,7 +790,7 @@
                             "name": "BubbleComponent"
                         },
                         {
-                            "name": "PhoneComponent"
+                            "name": "PhoneComponent (recursive)"
                         },
                         {
                             "name": "WirePreviewComponent",
@@ -1219,7 +1219,7 @@
                     "name": "BubbleComponent"
                 },
                 {
-                    "name": "PhoneComponent"
+                    "name": "PhoneComponent (recursive)"
                 }
             ]
         },
@@ -1283,7 +1283,7 @@
                                     "name": "BubbleComponent"
                                 },
                                 {
-                                    "name": "PhoneComponent"
+                                    "name": "PhoneComponent (recursive)"
                                 }
                             ]
                         }
@@ -1332,7 +1332,7 @@
                                             "name": "BubbleComponent"
                                         },
                                         {
-                                            "name": "PhoneComponent"
+                                            "name": "PhoneComponent (recursive)"
                                         },
                                         {
                                             "name": "WirePreviewComponent",
@@ -1374,7 +1374,7 @@
                             "name": "BubbleComponent"
                         },
                         {
-                            "name": "PhoneComponent"
+                            "name": "PhoneComponent (recursive)"
                         }
                     ]
                 },
@@ -1410,7 +1410,7 @@
                                     "name": "BubbleComponent"
                                 },
                                 {
-                                    "name": "PhoneComponent"
+                                    "name": "PhoneComponent (recursive)"
                                 },
                                 {
                                     "name": "WirePreviewComponent",
@@ -1539,21 +1539,7 @@
                     "name": "StepActionComponent"
                 },
                 {
-                    "name": "JourneyMessageComponent",
-                    "children": [
-                        {
-                            "name": "BoxMenuComponent"
-                        },
-                        {
-                            "name": "JourneyMessageComponent"
-                        },
-                        {
-                            "name": "StepActionComponent"
-                        },
-                        {
-                            "name": "VideoComponent"
-                        }
-                    ]
+                    "name": "JourneyMessageComponent (recursive)"
                 }
             ]
         },
@@ -1578,7 +1564,7 @@
                             "name": "BubbleComponent"
                         },
                         {
-                            "name": "PhoneComponent"
+                            "name": "PhoneComponent (recursive)"
                         }
                     ]
                 },
@@ -1690,7 +1676,7 @@
                                     "name": "BubbleComponent"
                                 },
                                 {
-                                    "name": "PhoneComponent"
+                                    "name": "PhoneComponent (recursive)"
                                 }
                             ]
                         },
@@ -1914,7 +1900,7 @@
                                     "name": "BubbleComponent"
                                 },
                                 {
-                                    "name": "PhoneComponent"
+                                    "name": "PhoneComponent (recursive)"
                                 },
                                 {
                                     "name": "WirePreviewComponent",
@@ -2051,7 +2037,7 @@
                                             "name": "BubbleComponent"
                                         },
                                         {
-                                            "name": "PhoneComponent"
+                                            "name": "PhoneComponent (recursive)"
                                         }
                                     ]
                                 },
@@ -2116,7 +2102,7 @@
                             "name": "BubbleComponent"
                         },
                         {
-                            "name": "PhoneComponent"
+                            "name": "PhoneComponent (recursive)"
                         }
                     ]
                 },
@@ -2202,21 +2188,7 @@
                             "name": "StepActionComponent"
                         },
                         {
-                            "name": "JourneyMessageComponent",
-                            "children": [
-                                {
-                                    "name": "BoxMenuComponent"
-                                },
-                                {
-                                    "name": "JourneyMessageComponent"
-                                },
-                                {
-                                    "name": "StepActionComponent"
-                                },
-                                {
-                                    "name": "VideoComponent"
-                                }
-                            ]
+                            "name": "JourneyMessageComponent (recursive)"
                         }
                     ]
                 },
