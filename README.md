@@ -13,8 +13,9 @@ use one of the 4 scripts in package.json
   - "debug": run this to run the data-building code with `inspect`
 
 ## Bugfix TODO
-1) get rid of 'user/jessica' in the paths in build_trees.js
-2) make sure this works for wire too
+1) Getting "QuickLaunchComponent" when I should be getting "QuickLaunchContentComponent".  Probably due to an incorrect result in `getDataByName`
+2) get rid of 'user/jessica' in the paths in build_trees.js
+3) make sure this works for wire too
 
 ## Feature TODO
 1) move the labels with children to the same position as the actual children for better readability
