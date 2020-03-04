@@ -1,7 +1,8 @@
 ## Angular Component Map
 This is a tiny utility to 
-  a) generate a json tree that describes all components defined in that project, and  their parent/child relationships
-  b) start a local server to start a tiny web page that'll display said json in a chart 
+  1) generate a json tree that describes all components defined in that project, and their parent/child relationships. 
+     (Writes data in a hirearchical format to match d3.hirearchy's expected input: https://github.com/d3/d3-hierarchy#hierarchy)
+  2) start a local server to start a tiny web page that'll display said json in a chart 
 
 It was specifically built to generate trees for Relay's Portal and Wire apps, to be used to decide where to direct testing efforts, and generally visualize & document their complexity.
 
@@ -12,19 +13,23 @@ use one of the 4 scripts in package.json
   - "serve": run this to just run the server, if you've already run `build` to generate data
   - "debug": run this to run the data-building code with `inspect`
 
+## Dependencies
+ - d3 to generate chart (credit: https://observablehq.com/@d3/tidy-tree) (`public/scripts/client.js`)
+ - express/node to run a local server (`main.js`)
+ - custom node script to walk/parse angular project and build json (`util/build_trees.js`)
+
 ## Bugfix TODO
-1) AllJourneysComponent should have children (JourneyListComponent) but does not
-2) get rid of 'user/jessica' in the paths in build_trees.js
-3) make sure this works for wire too
-4) make sure sorting is working correctly...
+1) get rid of 'user/jessica' in the paths in build_trees.js
+2) make sure this works for wire too
 
 ## Feature TODO
 1) move the labels with children to the same position as the actual children for better readability
-2) click a component name and highlight all matching component names, to see how often they're used.  
-3) add more metadata - number of components, etc
-4) put number of occurances in parens next to the names of components in the top-level
-5) allow passing in a filepath to generate a subtree on-the-fly?
-6) Some kinda testing...
+2) click a component name and highlight/outline all matching component names & subtrees
+3) add more metadata - number of components, depth etc
+4) indicate top-level components (referenced from in routes)
+5) indicate components that aren't used anywhere (like EmptyComponent)
+6) zoom into subtree
+7) testing
 
 ## Test Cases
 1) handle recursive components (ex: PhoneComponent)
