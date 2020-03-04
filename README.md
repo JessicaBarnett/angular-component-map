@@ -13,14 +13,13 @@ use one of the 4 scripts in package.json
   - "debug": run this to run the data-building code with `inspect`
 
 ## Bugfix TODO
-1) every time you regenerate data, the json file changes even if the files didn't.  Sort by # of children, and then alphabetically before writing json, to ensure consistent ordering.
-2) get rid of 'user/jessica' in the paths in build_trees.js
-3) make sure this works for wire too
+1) get rid of 'user/jessica' in the paths in build_trees.js
+2) make sure this works for wire too
 
 ## Feature TODO
 1) move the labels with children to the same position as the actual children for better readability
 2) click a component name and highlight all matching component names, to see how often they're used.  
-3) add more metadata - number of components, 
+3) add more metadata - number of components, etc
 4) put number of occurances in parens next to the names of components in the top-level
 5) allow passing in a filepath to generate a subtree on-the-fly?
 6) Some kinda testing...

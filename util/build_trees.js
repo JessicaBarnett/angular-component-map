@@ -84,7 +84,7 @@ class ComponentDataList {
     }
 
     createTrees() {
-        this.list = this._sortByFewestChildren(this.list);
+        this.list = this._sort(this.list);
         for (let i = 0; i < this.list.length; i++) {
             let childData = this.getDataByIndex(i);
             childData.tree = this._createTree(childData);
@@ -92,8 +92,11 @@ class ComponentDataList {
         }
     }
 
-    _sortByFewestChildren (list) {
-        return _.sortBy(list, (listItem) => listItem.children.length );
+    _sort(list) {
+        return _.flow(
+            (list) => _.sortBy(list, (listItem) => listItem.children.length),
+            (list) => _.sortBy(list, 'name'),
+        )(list); // sort by fewest shildren, and the aplhabetically by name
     }
     
     _createTree(componentData) { // depth is just for debugging
