@@ -2,195 +2,20 @@
     "name": "root",
     "children": [
         {
-            "name": "ActionComponent",
-            "children": [
-                {
-                    "name": "TinyEditorComponent"
-                },
-                {
-                    "name": "SpinnerComponent"
-                }
-            ]
-        },
-        {
-            "name": "AddMediaAssetComponent",
-            "children": [
-                {
-                    "name": "VideoComponent"
-                },
-                {
-                    "name": "UploadComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
             "name": "AgentExpressConsentComponent",
             "children": []
-        },
-        {
-            "name": "AgentJourneySelectComponent",
-            "children": [
-                {
-                    "name": "JourneyIconComponent"
-                },
-                {
-                    "name": "SelectJourneyButtonComponent"
-                },
-                {
-                    "name": "RemoveJourneyModalComponent"
-                }
-            ]
         },
         {
             "name": "AgentMessageComponent",
             "children": []
         },
         {
-            "name": "AgentOnboardingConfigComponent",
-            "children": [
-                {
-                    "name": "OnboardingToggleComponent"
-                },
-                {
-                    "name": "AgentJourneySelectComponent",
-                    "children": [
-                        {
-                            "name": "JourneyIconComponent"
-                        },
-                        {
-                            "name": "SelectJourneyButtonComponent"
-                        },
-                        {
-                            "name": "RemoveJourneyModalComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "AgentExpressConsentComponent"
-                },
-                {
-                    "name": "AgentValidationComponent",
-                    "children": [
-                        {
-                            "name": "TinyEditorComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "QuickLaunchComponent",
-                    "children": [
-                        {
-                            "name": "QuickLaunchComponent"
-                        },
-                        {
-                            "name": "TestLauncherComponent",
-                            "children": [
-                                {
-                                    "name": "TriggerSelectorComponent",
-                                    "children": [
-                                        {
-                                            "name": "PhoneComponent",
-                                            "children": [
-                                                {
-                                                    "name": "WirePreviewComponent",
-                                                    "children": [
-                                                        {
-                                                            "name": "VideoComponent"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "name": "BubbleComponent"
-                                                },
-                                                {
-                                                    "name": "PhoneComponent"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "JourneyLaunchedComponent"
-                                },
-                                {
-                                    "name": "CxBuilderComponent",
-                                    "children": [
-                                        {
-                                            "name": "JourneyListComponent",
-                                            "children": [
-                                                {
-                                                    "name": "SearchBarComponent"
-                                                },
-                                                {
-                                                    "name": "ColumnSortIconComponent"
-                                                },
-                                                {
-                                                    "name": "JourneySummaryComponent",
-                                                    "children": [
-                                                        {
-                                                            "name": "SpinnerComponent"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "name": "JourneyDetailsComponent",
-                                                    "children": [
-                                                        {
-                                                            "name": "SpinnerComponent"
-                                                        },
-                                                        {
-                                                            "name": "JourneyStepPreviewComponent",
-                                                            "children": [
-                                                                {
-                                                                    "name": "StepActionComponent"
-                                                                },
-                                                                {
-                                                                    "name": "MessageDialogComponent"
-                                                                }
-                                                            ]
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "name": "SpinnerComponent"
-                                                },
-                                                {
-                                                    "name": "MessageDialogComponent"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "MessageDialogComponent"
-                                }
-                            ]
-                        },
-                        {
-                            "name": "MessageDialogComponent"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "name": "AgentValidationComponent",
-            "children": [
-                {
-                    "name": "TinyEditorComponent"
-                }
-            ]
+            "children": []
         },
         {
             "name": "AllJourneysComponent",
-            "children": [
-                {
-                    "name": "JourneyListComponent"
-                }
-            ]
+            "children": []
         },
         {
             "name": "AppComponent",
@@ -198,33 +23,11 @@
         },
         {
             "name": "AppWrapperComponent",
-            "children": [
-                {
-                    "name": "SideNavComponent"
-                },
-                {
-                    "name": "HeaderComponent",
-                    "children": [
-                        {
-                            "name": "SpinnerComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "MessageDialogComponent"
-                },
-                {
-                    "name": "LoadingMaskComponent"
-                }
-            ]
+            "children": []
         },
         {
             "name": "AssignedComponent",
-            "children": [
-                {
-                    "name": "SpinnerComponent"
-                }
-            ]
+            "children": []
         },
         {
             "name": "AutocompleteComponent",
@@ -233,14 +36,6 @@
         {
             "name": "BannerPreviewComponent",
             "children": []
-        },
-        {
-            "name": "BlackoutSelectComponent",
-            "children": [
-                {
-                    "name": "RadioBtnComponent"
-                }
-            ]
         },
         {
             "name": "BoxMenuComponent",
@@ -259,358 +54,12 @@
             "children": []
         },
         {
-            "name": "ClientConfigContainerComponent",
-            "children": [
-                {
-                    "name": "ProgressTabsComponent"
-                },
-                {
-                    "name": "BreadcrumbsComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "ClientConfigReportComponent",
-            "children": [
-                {
-                    "name": "GenericPhoneComponent"
-                },
-                {
-                    "name": "WireHeaderComponent"
-                },
-                {
-                    "name": "NetworkComponent"
-                },
-                {
-                    "name": "ProductReportComponent",
-                    "children": [
-                        {
-                            "name": "GenericPhoneComponent"
-                        },
-                        {
-                            "name": "WireHeaderComponent"
-                        },
-                        {
-                            "name": "NetworkComponent"
-                        },
-                        {
-                            "name": "ProductContactInfoRowComponent"
-                        },
-                        {
-                            "name": "ProductLegalGenericComponent"
-                        },
-                        {
-                            "name": "ProductOnboardingFieldsRowComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "ClientFeatureConfigComponent",
-            "children": [
-                {
-                    "name": "RadioBtnComponent"
-                }
-            ]
-        },
-        {
             "name": "ClientHeaderComponent",
             "children": []
         },
         {
-            "name": "ClientImagesNewComponent",
-            "children": [
-                {
-                    "name": "ClientHeaderComponent"
-                },
-                {
-                    "name": "ImageInputComponent",
-                    "children": [
-                        {
-                            "name": "AddMediaAssetComponent",
-                            "children": [
-                                {
-                                    "name": "VideoComponent"
-                                },
-                                {
-                                    "name": "UploadComponent"
-                                },
-                                {
-                                    "name": "MessageDialogComponent"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "ClientInfoEditComponent",
-            "children": [
-                {
-                    "name": "ClientHeaderComponent"
-                },
-                {
-                    "name": "TextInputComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "ClientInfoNewComponent",
-            "children": [
-                {
-                    "name": "ClientHeaderComponent"
-                },
-                {
-                    "name": "TextInputComponent"
-                },
-                {
-                    "name": "InputInfoBoxComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "ClientInputsNewComponent",
-            "children": [
-                {
-                    "name": "ClientHeaderComponent"
-                },
-                {
-                    "name": "BlackoutSelectComponent",
-                    "children": [
-                        {
-                            "name": "RadioBtnComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "RadioBtnComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "ClientListComponent",
-            "children": [
-                {
-                    "name": "ColumnSortIconComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
             "name": "ClientMobileMessageVerificationComponent",
             "children": []
-        },
-        {
-            "name": "ClientOnboardingAndFeatureComponent",
-            "children": [
-                {
-                    "name": "JourneyListComponent"
-                },
-                {
-                    "name": "ClientHeaderComponent"
-                },
-                {
-                    "name": "RadioBtnComponent"
-                },
-                {
-                    "name": "OnboardingToggleComponent"
-                },
-                {
-                    "name": "IvrConfigComponent",
-                    "children": [
-                        {
-                            "name": "RadioBtnComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "AgentOnboardingConfigComponent",
-                    "children": [
-                        {
-                            "name": "OnboardingToggleComponent"
-                        },
-                        {
-                            "name": "AgentJourneySelectComponent",
-                            "children": [
-                                {
-                                    "name": "JourneyIconComponent"
-                                },
-                                {
-                                    "name": "SelectJourneyButtonComponent"
-                                },
-                                {
-                                    "name": "RemoveJourneyModalComponent"
-                                }
-                            ]
-                        },
-                        {
-                            "name": "AgentExpressConsentComponent"
-                        },
-                        {
-                            "name": "AgentValidationComponent",
-                            "children": [
-                                {
-                                    "name": "TinyEditorComponent"
-                                }
-                            ]
-                        },
-                        {
-                            "name": "QuickLaunchComponent",
-                            "children": [
-                                {
-                                    "name": "QuickLaunchComponent"
-                                },
-                                {
-                                    "name": "TestLauncherComponent",
-                                    "children": [
-                                        {
-                                            "name": "TriggerSelectorComponent",
-                                            "children": [
-                                                {
-                                                    "name": "PhoneComponent",
-                                                    "children": [
-                                                        {
-                                                            "name": "WirePreviewComponent",
-                                                            "children": [
-                                                                {
-                                                                    "name": "VideoComponent"
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "name": "BubbleComponent"
-                                                        },
-                                                        {
-                                                            "name": "PhoneComponent"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "name": "JourneyLaunchedComponent"
-                                        },
-                                        {
-                                            "name": "CxBuilderComponent",
-                                            "children": [
-                                                {
-                                                    "name": "JourneyListComponent",
-                                                    "children": [
-                                                        {
-                                                            "name": "SearchBarComponent"
-                                                        },
-                                                        {
-                                                            "name": "ColumnSortIconComponent"
-                                                        },
-                                                        {
-                                                            "name": "JourneySummaryComponent",
-                                                            "children": [
-                                                                {
-                                                                    "name": "SpinnerComponent"
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "name": "JourneyDetailsComponent",
-                                                            "children": [
-                                                                {
-                                                                    "name": "SpinnerComponent"
-                                                                },
-                                                                {
-                                                                    "name": "JourneyStepPreviewComponent",
-                                                                    "children": [
-                                                                        {
-                                                                            "name": "StepActionComponent"
-                                                                        },
-                                                                        {
-                                                                            "name": "MessageDialogComponent"
-                                                                        }
-                                                                    ]
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "name": "SpinnerComponent"
-                                                        },
-                                                        {
-                                                            "name": "MessageDialogComponent"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "name": "MessageDialogComponent"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "MessageDialogComponent"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "FileProcessingConfigComponent",
-                    "children": [
-                        {
-                            "name": "RadioBtnComponent"
-                        },
-                        {
-                            "name": "TimeWindowSelectComponent"
-                        },
-                        {
-                            "name": "TextInputComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "ClientValidationAndVerificationComponent",
-            "children": [
-                {
-                    "name": "ClientHeaderComponent"
-                },
-                {
-                    "name": "OnboardingToggleComponent"
-                },
-                {
-                    "name": "ValidationFieldsListComponent"
-                },
-                {
-                    "name": "ClientMobileMessageVerificationComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
         },
         {
             "name": "ColorPickerComponent",
@@ -625,64 +74,16 @@
             "children": []
         },
         {
-            "name": "ControlTagsComponent",
-            "children": [
-                {
-                    "name": "SpinnerComponent"
-                },
-                {
-                    "name": "EditableListComponent",
-                    "children": [
-                        {
-                            "name": "AutocompleteComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
             "name": "CustomerDetailComponent",
             "children": []
         },
         {
             "name": "CustomerDetailsComponent",
-            "children": [
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "CustomerListComponent",
-            "children": [
-                {
-                    "name": "SearchBarComponent"
-                },
-                {
-                    "name": "ColumnSortIconComponent"
-                },
-                {
-                    "name": "SpinnerComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
+            "children": []
         },
         {
             "name": "CustomerMessageComponent",
             "children": []
-        },
-        {
-            "name": "CxBuilderComponent",
-            "children": [
-                {
-                    "name": "JourneyListComponent"
-                }
-            ]
         },
         {
             "name": "DateRangeFilterComponent",
@@ -697,111 +98,16 @@
             "children": []
         },
         {
-            "name": "EditMediaAssetDetailsComponent",
-            "children": [
-                {
-                    "name": "VideoComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "EditableListComponent",
-            "children": [
-                {
-                    "name": "AutocompleteComponent"
-                }
-            ]
-        },
-        {
             "name": "EmptyComponent",
             "children": []
         },
         {
             "name": "FileEngineComponent",
-            "children": [
-                {
-                    "name": "SpinnerComponent"
-                }
-            ]
-        },
-        {
-            "name": "FileLauncherComponent",
-            "children": [
-                {
-                    "name": "UploadDropAreaComponent"
-                },
-                {
-                    "name": "UploadProgressComponent"
-                },
-                {
-                    "name": "LaunchChoiceComponent"
-                },
-                {
-                    "name": "ScheduleLaunchDialogComponent"
-                },
-                {
-                    "name": "LaunchResultComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "FileLauncherPageComponent",
-            "children": [
-                {
-                    "name": "ProgressTabsComponent"
-                },
-                {
-                    "name": "FileLauncherComponent",
-                    "children": [
-                        {
-                            "name": "UploadDropAreaComponent"
-                        },
-                        {
-                            "name": "UploadProgressComponent"
-                        },
-                        {
-                            "name": "LaunchChoiceComponent"
-                        },
-                        {
-                            "name": "ScheduleLaunchDialogComponent"
-                        },
-                        {
-                            "name": "LaunchResultComponent"
-                        },
-                        {
-                            "name": "MessageDialogComponent"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "FileProcessingConfigComponent",
-            "children": [
-                {
-                    "name": "RadioBtnComponent"
-                },
-                {
-                    "name": "TimeWindowSelectComponent"
-                },
-                {
-                    "name": "TextInputComponent"
-                }
-            ]
+            "children": []
         },
         {
             "name": "ForgotPasswordComponent",
-            "children": [
-                {
-                    "name": "SpinnerComponent"
-                }
-            ]
+            "children": []
         },
         {
             "name": "GenericPhoneComponent",
@@ -813,34 +119,11 @@
         },
         {
             "name": "HeaderComponent",
-            "children": [
-                {
-                    "name": "SpinnerComponent"
-                }
-            ]
+            "children": []
         },
         {
             "name": "HelpTextComponent",
             "children": []
-        },
-        {
-            "name": "ImageInputComponent",
-            "children": [
-                {
-                    "name": "AddMediaAssetComponent",
-                    "children": [
-                        {
-                            "name": "VideoComponent"
-                        },
-                        {
-                            "name": "UploadComponent"
-                        },
-                        {
-                            "name": "MessageDialogComponent"
-                        }
-                    ]
-                }
-            ]
         },
         {
             "name": "InputInfoBoxComponent",
@@ -851,46 +134,6 @@
             "children": []
         },
         {
-            "name": "IvrConfigComponent",
-            "children": [
-                {
-                    "name": "RadioBtnComponent"
-                }
-            ]
-        },
-        {
-            "name": "JobsListComponent",
-            "children": [
-                {
-                    "name": "SearchInputComponent"
-                },
-                {
-                    "name": "SelectComponent"
-                },
-                {
-                    "name": "TagFilterListComponent"
-                },
-                {
-                    "name": "ListItemExpandableComponent"
-                },
-                {
-                    "name": "StatusComponent"
-                },
-                {
-                    "name": "JobsListDetailComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                },
-                {
-                    "name": "ScheduleLaunchDialogComponent"
-                },
-                {
-                    "name": "SpinnerComponent"
-                }
-            ]
-        },
-        {
             "name": "JobsListDetailComponent",
             "children": []
         },
@@ -899,176 +142,8 @@
             "children": []
         },
         {
-            "name": "JourneyBrowserComponent",
-            "children": [
-                {
-                    "name": "SearchInputComponent"
-                },
-                {
-                    "name": "GroupByComponent"
-                },
-                {
-                    "name": "SelectComponent"
-                },
-                {
-                    "name": "TagFilterListComponent"
-                },
-                {
-                    "name": "SpinnerComponent"
-                },
-                {
-                    "name": "JourneyGroupContainerComponent",
-                    "children": [
-                        {
-                            "name": "JourneyItemComponent",
-                            "children": [
-                                {
-                                    "name": "JourneyItemComponent"
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "JourneyBuilderComponent",
-            "children": [
-                {
-                    "name": "ToolbarComponent",
-                    "children": [
-                        {
-                            "name": "JourneyInspectorComponent"
-                        },
-                        {
-                            "name": "MessageInspectorComponent"
-                        },
-                        {
-                            "name": "DelayInspectorComponent"
-                        },
-                        {
-                            "name": "TriggerInspectorComponent",
-                            "children": [
-                                {
-                                    "name": "EditableListComponent",
-                                    "children": [
-                                        {
-                                            "name": "AutocompleteComponent"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "name": "MessageDialogComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "JourneyMetadataDialogComponent",
-                    "children": [
-                        {
-                            "name": "TextInputComponent"
-                        },
-                        {
-                            "name": "JourneyMetadataProductSelectComponent",
-                            "children": [
-                                {
-                                    "name": "MessageDialogComponent"
-                                }
-                            ]
-                        },
-                        {
-                            "name": "RadioBtnComponent"
-                        },
-                        {
-                            "name": "MessageDialogComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "JourneyTriggerComponent",
-                    "children": [
-                        {
-                            "name": "BoxMenuComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "JourneyArrowComponent"
-                },
-                {
-                    "name": "JourneyMessageComponent",
-                    "children": [
-                        {
-                            "name": "BoxMenuComponent"
-                        },
-                        {
-                            "name": "VideoComponent"
-                        },
-                        {
-                            "name": "StepActionComponent"
-                        },
-                        {
-                            "name": "JourneyMessageComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "JourneyDelayComponent",
-                    "children": [
-                        {
-                            "name": "BoxMenuComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "JourneyStopComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "JourneyCopyComponent",
-            "children": [
-                {
-                    "name": "CxBuilderComponent",
-                    "children": [
-                        {
-                            "name": "JourneyListComponent"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "JourneyDelayComponent",
-            "children": [
-                {
-                    "name": "BoxMenuComponent"
-                }
-            ]
-        },
-        {
             "name": "JourneyDetailsComponent",
-            "children": [
-                {
-                    "name": "SpinnerComponent"
-                },
-                {
-                    "name": "JourneyStepPreviewComponent"
-                }
-            ]
-        },
-        {
-            "name": "JourneyGroupContainerComponent",
-            "children": [
-                {
-                    "name": "JourneyItemComponent"
-                }
-            ]
+            "children": []
         },
         {
             "name": "JourneyIconComponent",
@@ -1079,35 +154,6 @@
             "children": []
         },
         {
-            "name": "JourneyItemComponent",
-            "children": [
-                {
-                    "name": "JourneyItemComponent"
-                }
-            ]
-        },
-        {
-            "name": "JourneyItemDetailComponent",
-            "children": [
-                {
-                    "name": "JourneyItemComponent",
-                    "children": [
-                        {
-                            "name": "JourneyItemComponent"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "JourneyItemDetailGridViewComponent",
-            "children": [
-                {
-                    "name": "StepActionComponent"
-                }
-            ]
-        },
-        {
             "name": "JourneyItemDetailListViewComponent",
             "children": []
         },
@@ -1116,178 +162,12 @@
             "children": []
         },
         {
-            "name": "JourneyListComponent",
-            "children": [
-                {
-                    "name": "SearchBarComponent"
-                },
-                {
-                    "name": "ColumnSortIconComponent"
-                },
-                {
-                    "name": "JourneySummaryComponent"
-                },
-                {
-                    "name": "JourneyDetailsComponent",
-                    "children": [
-                        {
-                            "name": "SpinnerComponent"
-                        },
-                        {
-                            "name": "JourneyStepPreviewComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "SpinnerComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "JourneyMessageComponent",
-            "children": [
-                {
-                    "name": "BoxMenuComponent"
-                },
-                {
-                    "name": "VideoComponent"
-                },
-                {
-                    "name": "StepActionComponent"
-                },
-                {
-                    "name": "JourneyMessageComponent"
-                }
-            ]
-        },
-        {
-            "name": "JourneyMetadataDialogComponent",
-            "children": [
-                {
-                    "name": "TextInputComponent"
-                },
-                {
-                    "name": "JourneyMetadataProductSelectComponent"
-                },
-                {
-                    "name": "RadioBtnComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "JourneyMetadataPageComponent",
-            "children": [
-                {
-                    "name": "JourneyMetadataDialogComponent",
-                    "children": [
-                        {
-                            "name": "TextInputComponent"
-                        },
-                        {
-                            "name": "JourneyMetadataProductSelectComponent"
-                        },
-                        {
-                            "name": "RadioBtnComponent"
-                        },
-                        {
-                            "name": "MessageDialogComponent"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "name": "JourneyMetadataProductSelectComponent",
-            "children": [
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "JourneyPdfPreviewComponent",
-            "children": [
-                {
-                    "name": "ColorPickerComponent"
-                },
-                {
-                    "name": "PhoneComponent"
-                },
-                {
-                    "name": "JourneyArrowComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "JourneyPreviewComponent",
-            "children": [
-                {
-                    "name": "PhoneComponent"
-                },
-                {
-                    "name": "JourneyArrowComponent"
-                },
-                {
-                    "name": "StartComponent"
-                },
-                {
-                    "name": "DelayComponent"
-                },
-                {
-                    "name": "StopComponent"
-                }
-            ]
-        },
-        {
-            "name": "JourneyStepPreviewComponent",
-            "children": [
-                {
-                    "name": "StepActionComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
+            "children": []
         },
         {
             "name": "JourneyStopComponent",
             "children": []
-        },
-        {
-            "name": "JourneySummaryComponent",
-            "children": [
-                {
-                    "name": "SpinnerComponent"
-                }
-            ]
-        },
-        {
-            "name": "JourneyTriggerComponent",
-            "children": [
-                {
-                    "name": "BoxMenuComponent"
-                }
-            ]
-        },
-        {
-            "name": "KeyConfigComponent",
-            "children": [
-                {
-                    "name": "TextInputComponent"
-                },
-                {
-                    "name": "UploadComponent"
-                }
-            ]
         },
         {
             "name": "LaunchChoiceComponent",
@@ -1303,39 +183,7 @@
         },
         {
             "name": "LauncherListComponent",
-            "children": [
-                {
-                    "name": "JourneyListComponent",
-                    "children": [
-                        {
-                            "name": "SearchBarComponent"
-                        },
-                        {
-                            "name": "ColumnSortIconComponent"
-                        },
-                        {
-                            "name": "JourneySummaryComponent"
-                        },
-                        {
-                            "name": "JourneyDetailsComponent",
-                            "children": [
-                                {
-                                    "name": "SpinnerComponent"
-                                },
-                                {
-                                    "name": "JourneyStepPreviewComponent"
-                                }
-                            ]
-                        },
-                        {
-                            "name": "SpinnerComponent"
-                        },
-                        {
-                            "name": "MessageDialogComponent"
-                        }
-                    ]
-                }
-            ]
+            "children": []
         },
         {
             "name": "ListItemExpandableComponent",
@@ -1347,123 +195,11 @@
         },
         {
             "name": "LoginComponent",
-            "children": [
-                {
-                    "name": "SpinnerComponent"
-                }
-            ]
-        },
-        {
-            "name": "LoginPreviewComponent",
-            "children": [
-                {
-                    "name": "BannerPreviewComponent"
-                }
-            ]
+            "children": []
         },
         {
             "name": "LogoutComponent",
             "children": []
-        },
-        {
-            "name": "MediaListComponent",
-            "children": [
-                {
-                    "name": "SearchBarComponent"
-                },
-                {
-                    "name": "ColumnSortIconComponent"
-                },
-                {
-                    "name": "AddMediaAssetComponent",
-                    "children": [
-                        {
-                            "name": "VideoComponent"
-                        },
-                        {
-                            "name": "UploadComponent"
-                        },
-                        {
-                            "name": "MessageDialogComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "EditMediaAssetDetailsComponent",
-                    "children": [
-                        {
-                            "name": "VideoComponent"
-                        },
-                        {
-                            "name": "MessageDialogComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "MessageBuilderComponent",
-            "children": [
-                {
-                    "name": "PhoneComponent"
-                },
-                {
-                    "name": "RadioBtnComponent"
-                },
-                {
-                    "name": "VideoComponent"
-                },
-                {
-                    "name": "TinyEditorComponent"
-                },
-                {
-                    "name": "ActionComponent",
-                    "children": [
-                        {
-                            "name": "TinyEditorComponent"
-                        },
-                        {
-                            "name": "SpinnerComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "SmsBuilderComponent"
-                },
-                {
-                    "name": "AddMediaAssetComponent",
-                    "children": [
-                        {
-                            "name": "VideoComponent"
-                        },
-                        {
-                            "name": "UploadComponent"
-                        },
-                        {
-                            "name": "MessageDialogComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "MessageCopyComponent",
-            "children": [
-                {
-                    "name": "CxBuilderComponent",
-                    "children": [
-                        {
-                            "name": "JourneyListComponent"
-                        }
-                    ]
-                }
-            ]
         },
         {
             "name": "MessageDialogComponent",
@@ -1474,118 +210,8 @@
             "children": []
         },
         {
-            "name": "MessageWindowComponent",
-            "children": [
-                {
-                    "name": "SpinnerComponent"
-                },
-                {
-                    "name": "AgentMessageComponent"
-                },
-                {
-                    "name": "CustomerMessageComponent"
-                }
-            ]
-        },
-        {
-            "name": "MessagingComponent",
-            "children": [
-                {
-                    "name": "SpinnerComponent"
-                },
-                {
-                    "name": "TagSelectComponent"
-                },
-                {
-                    "name": "LaunchSelectComponent"
-                },
-                {
-                    "name": "AssignedComponent",
-                    "children": [
-                        {
-                            "name": "SpinnerComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "UnassignedComponent",
-                    "children": [
-                        {
-                            "name": "SpinnerComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "MessageWindowComponent",
-                    "children": [
-                        {
-                            "name": "SpinnerComponent"
-                        },
-                        {
-                            "name": "AgentMessageComponent"
-                        },
-                        {
-                            "name": "CustomerMessageComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "CustomerDetailsComponent",
-                    "children": [
-                        {
-                            "name": "MessageDialogComponent"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "name": "MgmtComponent",
             "children": []
-        },
-        {
-            "name": "MonitorComponent",
-            "children": [
-                {
-                    "name": "TabBarComponent"
-                },
-                {
-                    "name": "ProcessedJobsComponent",
-                    "children": [
-                        {
-                            "name": "ColumnSortIconComponent"
-                        },
-                        {
-                            "name": "ProcessedJobRowComponent"
-                        },
-                        {
-                            "name": "MessageDialogComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "ScheduledJobsComponent",
-                    "children": [
-                        {
-                            "name": "DateRangeFilterComponent"
-                        },
-                        {
-                            "name": "ColumnSortIconComponent"
-                        },
-                        {
-                            "name": "ScheduledJobRowComponent",
-                            "children": [
-                                {
-                                    "name": "MessageDialogComponent"
-                                }
-                            ]
-                        },
-                        {
-                            "name": "MessageDialogComponent"
-                        }
-                    ]
-                }
-            ]
         },
         {
             "name": "NetworkComponent",
@@ -1596,56 +222,12 @@
             "children": []
         },
         {
-            "name": "PasswordPreviewComponent",
-            "children": [
-                {
-                    "name": "BannerPreviewComponent"
-                }
-            ]
-        },
-        {
-            "name": "PerformanceComponent",
-            "children": [
-                {
-                    "name": "TabBarComponent"
-                }
-            ]
-        },
-        {
-            "name": "PhoneComponent",
-            "children": [
-                {
-                    "name": "WirePreviewComponent"
-                },
-                {
-                    "name": "BubbleComponent"
-                },
-                {
-                    "name": "PhoneComponent"
-                }
-            ]
-        },
-        {
             "name": "PrivacyPolicyComponent",
             "children": []
         },
         {
             "name": "ProcessedJobRowComponent",
             "children": []
-        },
-        {
-            "name": "ProcessedJobsComponent",
-            "children": [
-                {
-                    "name": "ColumnSortIconComponent"
-                },
-                {
-                    "name": "ProcessedJobRowComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
         },
         {
             "name": "ProductConsumerPasswordRequiredComponent",
@@ -1656,336 +238,12 @@
             "children": []
         },
         {
-            "name": "ProductGroupFeaturesComponent",
-            "children": [
-                {
-                    "name": "ClientHeaderComponent"
-                },
-                {
-                    "name": "RadioBtnComponent"
-                },
-                {
-                    "name": "TinyEditorComponent"
-                },
-                {
-                    "name": "GenericPhoneComponent"
-                },
-                {
-                    "name": "PasswordPreviewComponent",
-                    "children": [
-                        {
-                            "name": "BannerPreviewComponent"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "name": "ProductGroupOnboardingComponent",
-            "children": [
-                {
-                    "name": "ProductOnboardingComponent",
-                    "children": [
-                        {
-                            "name": "ClientHeaderComponent"
-                        },
-                        {
-                            "name": "RadioBtnComponent"
-                        },
-                        {
-                            "name": "JourneyListComponent",
-                            "children": [
-                                {
-                                    "name": "SearchBarComponent"
-                                },
-                                {
-                                    "name": "ColumnSortIconComponent"
-                                },
-                                {
-                                    "name": "JourneySummaryComponent"
-                                },
-                                {
-                                    "name": "JourneyDetailsComponent",
-                                    "children": [
-                                        {
-                                            "name": "SpinnerComponent"
-                                        },
-                                        {
-                                            "name": "JourneyStepPreviewComponent"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "SpinnerComponent"
-                                },
-                                {
-                                    "name": "MessageDialogComponent"
-                                }
-                            ]
-                        },
-                        {
-                            "name": "TinyEditorComponent"
-                        },
-                        {
-                            "name": "GenericPhoneComponent"
-                        },
-                        {
-                            "name": "LoginPreviewComponent",
-                            "children": [
-                                {
-                                    "name": "BannerPreviewComponent"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "ProductGroupFeaturesComponent",
-                    "children": [
-                        {
-                            "name": "ClientHeaderComponent"
-                        },
-                        {
-                            "name": "RadioBtnComponent"
-                        },
-                        {
-                            "name": "TinyEditorComponent"
-                        },
-                        {
-                            "name": "GenericPhoneComponent"
-                        },
-                        {
-                            "name": "PasswordPreviewComponent",
-                            "children": [
-                                {
-                                    "name": "BannerPreviewComponent"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "VerificationComponent",
-                    "children": [
-                        {
-                            "name": "ClientHeaderComponent"
-                        },
-                        {
-                            "name": "TextInputComponent"
-                        },
-                        {
-                            "name": "InputInfoBoxComponent"
-                        },
-                        {
-                            "name": "TinyEditorComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "ProductGroupsComponent",
-            "children": [
-                {
-                    "name": "ClientHeaderComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "ProductGroupsEditComponent",
-            "children": [
-                {
-                    "name": "ProductInfoComponent",
-                    "children": [
-                        {
-                            "name": "ClientHeaderComponent"
-                        },
-                        {
-                            "name": "TextInputComponent"
-                        },
-                        {
-                            "name": "InputInfoBoxComponent"
-                        },
-                        {
-                            "name": "HelpTextComponent"
-                        },
-                        {
-                            "name": "ContactInfoInputsComponent"
-                        },
-                        {
-                            "name": "ImageInputComponent",
-                            "children": [
-                                {
-                                    "name": "AddMediaAssetComponent",
-                                    "children": [
-                                        {
-                                            "name": "VideoComponent"
-                                        },
-                                        {
-                                            "name": "UploadComponent"
-                                        },
-                                        {
-                                            "name": "MessageDialogComponent"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "name": "ColorPickerComponent"
-                        },
-                        {
-                            "name": "GenericPhoneComponent"
-                        },
-                        {
-                            "name": "WireHeaderComponent"
-                        },
-                        {
-                            "name": "NetworkComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "ProductInfoComponent",
-            "children": [
-                {
-                    "name": "ClientHeaderComponent"
-                },
-                {
-                    "name": "TextInputComponent"
-                },
-                {
-                    "name": "InputInfoBoxComponent"
-                },
-                {
-                    "name": "HelpTextComponent"
-                },
-                {
-                    "name": "ContactInfoInputsComponent"
-                },
-                {
-                    "name": "ImageInputComponent",
-                    "children": [
-                        {
-                            "name": "AddMediaAssetComponent",
-                            "children": [
-                                {
-                                    "name": "VideoComponent"
-                                },
-                                {
-                                    "name": "UploadComponent"
-                                },
-                                {
-                                    "name": "MessageDialogComponent"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "ColorPickerComponent"
-                },
-                {
-                    "name": "GenericPhoneComponent"
-                },
-                {
-                    "name": "WireHeaderComponent"
-                },
-                {
-                    "name": "NetworkComponent"
-                }
-            ]
-        },
-        {
-            "name": "ProductLegalComponent",
-            "children": [
-                {
-                    "name": "ClientHeaderComponent"
-                },
-                {
-                    "name": "RadioBtnComponent"
-                },
-                {
-                    "name": "TinyEditorComponent"
-                },
-                {
-                    "name": "TextInputComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
+            "children": []
         },
         {
             "name": "ProductLegalGenericComponent",
             "children": []
-        },
-        {
-            "name": "ProductOnboardingComponent",
-            "children": [
-                {
-                    "name": "ClientHeaderComponent"
-                },
-                {
-                    "name": "RadioBtnComponent"
-                },
-                {
-                    "name": "JourneyListComponent",
-                    "children": [
-                        {
-                            "name": "SearchBarComponent"
-                        },
-                        {
-                            "name": "ColumnSortIconComponent"
-                        },
-                        {
-                            "name": "JourneySummaryComponent"
-                        },
-                        {
-                            "name": "JourneyDetailsComponent",
-                            "children": [
-                                {
-                                    "name": "SpinnerComponent"
-                                },
-                                {
-                                    "name": "JourneyStepPreviewComponent"
-                                }
-                            ]
-                        },
-                        {
-                            "name": "SpinnerComponent"
-                        },
-                        {
-                            "name": "MessageDialogComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "TinyEditorComponent"
-                },
-                {
-                    "name": "GenericPhoneComponent"
-                },
-                {
-                    "name": "LoginPreviewComponent",
-                    "children": [
-                        {
-                            "name": "BannerPreviewComponent"
-                        }
-                    ]
-                }
-            ]
         },
         {
             "name": "ProductOnboardingFieldsRowComponent",
@@ -2004,70 +262,8 @@
             "children": []
         },
         {
-            "name": "ProductReportComponent",
-            "children": [
-                {
-                    "name": "GenericPhoneComponent"
-                },
-                {
-                    "name": "WireHeaderComponent"
-                },
-                {
-                    "name": "NetworkComponent"
-                },
-                {
-                    "name": "ProductContactInfoRowComponent"
-                },
-                {
-                    "name": "ProductLegalGenericComponent"
-                },
-                {
-                    "name": "ProductOnboardingFieldsRowComponent"
-                }
-            ]
-        },
-        {
             "name": "ProgressTabsComponent",
             "children": []
-        },
-        {
-            "name": "QuickLaunchComponent",
-            "children": [
-                {
-                    "name": "QuickLaunchComponent"
-                },
-                {
-                    "name": "TestLauncherComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "QuickLaunchContentComponent",
-            "children": [
-                {
-                    "name": "JourneyIconComponent"
-                },
-                {
-                    "name": "PhoneComponent",
-                    "children": [
-                        {
-                            "name": "WirePreviewComponent"
-                        },
-                        {
-                            "name": "BubbleComponent"
-                        },
-                        {
-                            "name": "PhoneComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
         },
         {
             "name": "RadioBtnComponent",
@@ -2079,11 +275,7 @@
         },
         {
             "name": "ResetPasswordComponent",
-            "children": [
-                {
-                    "name": "SpinnerComponent"
-                }
-            ]
+            "children": []
         },
         {
             "name": "SafeRedirectComponent",
@@ -2092,36 +284,6 @@
         {
             "name": "ScheduleLaunchDialogComponent",
             "children": []
-        },
-        {
-            "name": "ScheduledJobRowComponent",
-            "children": [
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "ScheduledJobsComponent",
-            "children": [
-                {
-                    "name": "DateRangeFilterComponent"
-                },
-                {
-                    "name": "ColumnSortIconComponent"
-                },
-                {
-                    "name": "ScheduledJobRowComponent",
-                    "children": [
-                        {
-                            "name": "MessageDialogComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
         },
         {
             "name": "SearchBarComponent",
@@ -2142,144 +304,6 @@
         {
             "name": "SelectJourneyButtonComponent",
             "children": []
-        },
-        {
-            "name": "SetupAutoResponseComponent",
-            "children": [
-                {
-                    "name": "SpinnerComponent"
-                },
-                {
-                    "name": "GenericPhoneComponent"
-                },
-                {
-                    "name": "WireHeaderComponent"
-                },
-                {
-                    "name": "TwoWayPreviewComponent",
-                    "children": [
-                        {
-                            "name": "BubbleComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "BlackoutSelectComponent",
-                    "children": [
-                        {
-                            "name": "RadioBtnComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "SetupContainerComponent",
-            "children": [
-                {
-                    "name": "BreadcrumbsComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "SetupSmsPingComponent",
-            "children": [
-                {
-                    "name": "SpinnerComponent"
-                },
-                {
-                    "name": "GenericPhoneComponent"
-                },
-                {
-                    "name": "BubbleComponent"
-                },
-                {
-                    "name": "SmsBuilderComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
-            "name": "SetupSummaryComponent",
-            "children": [
-                {
-                    "name": "SpinnerComponent"
-                },
-                {
-                    "name": "GenericPhoneComponent"
-                },
-                {
-                    "name": "WireHeaderComponent"
-                },
-                {
-                    "name": "TwoWayPreviewComponent"
-                },
-                {
-                    "name": "BubbleComponent"
-                }
-            ]
-        },
-        {
-            "name": "SetupUsersComponent",
-            "children": [
-                {
-                    "name": "SpinnerComponent"
-                },
-                {
-                    "name": "UserListComponent",
-                    "children": [
-                        {
-                            "name": "SearchBarComponent"
-                        },
-                        {
-                            "name": "ColumnSortIconComponent"
-                        },
-                        {
-                            "name": "CheckboxComponent"
-                        },
-                        {
-                            "name": "SpinnerComponent"
-                        },
-                        {
-                            "name": "UserResetComponent"
-                        },
-                        {
-                            "name": "MessageDialogComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "MessageDialogComponent"
-                },
-                {
-                    "name": "UserEditComponent",
-                    "children": [
-                        {
-                            "name": "SpinnerComponent"
-                        },
-                        {
-                            "name": "TextInputComponent"
-                        },
-                        {
-                            "name": "InputInfoBoxComponent"
-                        },
-                        {
-                            "name": "UserResetComponent"
-                        },
-                        {
-                            "name": "MessageDialogComponent"
-                        }
-                    ]
-                }
-            ]
         },
         {
             "name": "ShowArchivedComponent",
@@ -2330,28 +354,6 @@
             "children": []
         },
         {
-            "name": "TestLauncherComponent",
-            "children": [
-                {
-                    "name": "TriggerSelectorComponent"
-                },
-                {
-                    "name": "JourneyLaunchedComponent"
-                },
-                {
-                    "name": "CxBuilderComponent",
-                    "children": [
-                        {
-                            "name": "JourneyListComponent"
-                        }
-                    ]
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
             "name": "TextInputComponent",
             "children": []
         },
@@ -2364,22 +366,404 @@
             "children": []
         },
         {
+            "name": "UnassignedComponent",
+            "children": []
+        },
+        {
+            "name": "UploadComponent",
+            "children": []
+        },
+        {
+            "name": "UploadDropAreaComponent",
+            "children": []
+        },
+        {
+            "name": "UploadProgressComponent",
+            "children": []
+        },
+        {
+            "name": "UserResetComponent",
+            "children": []
+        },
+        {
+            "name": "ValidationFieldsListComponent",
+            "children": []
+        },
+        {
+            "name": "VideoComponent",
+            "children": []
+        },
+        {
+            "name": "WireHeaderComponent",
+            "children": []
+        },
+        {
+            "name": "ActionComponent",
+            "children": [
+                {
+                    "name": "SpinnerComponent"
+                }
+            ]
+        },
+        {
+            "name": "BlackoutSelectComponent",
+            "children": [
+                {
+                    "name": "RadioBtnComponent"
+                }
+            ]
+        },
+        {
+            "name": "ClientFeatureConfigComponent",
+            "children": [
+                {
+                    "name": "RadioBtnComponent"
+                }
+            ]
+        },
+        {
+            "name": "ClientListComponent",
+            "children": [
+                {
+                    "name": "ColumnSortIconComponent"
+                }
+            ]
+        },
+        {
+            "name": "CxBuilderComponent",
+            "children": [
+                {
+                    "name": "JourneyListComponent",
+                    "children": [
+                        {
+                            "name": "SearchBarComponent"
+                        },
+                        {
+                            "name": "ColumnSortIconComponent"
+                        },
+                        {
+                            "name": "JourneySummaryComponent",
+                            "children": [
+                                {
+                                    "name": "SpinnerComponent"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "SpinnerComponent"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "EditMediaAssetDetailsComponent",
+            "children": [
+                {
+                    "name": "VideoComponent"
+                }
+            ]
+        },
+        {
+            "name": "EditableListComponent",
+            "children": [
+                {
+                    "name": "AutocompleteComponent"
+                }
+            ]
+        },
+        {
+            "name": "FileProcessingConfigComponent",
+            "children": [
+                {
+                    "name": "TimeWindowSelectComponent"
+                }
+            ]
+        },
+        {
+            "name": "ImageInputComponent",
+            "children": [
+                {
+                    "name": "AddMediaAssetComponent",
+                    "children": [
+                        {
+                            "name": "VideoComponent"
+                        },
+                        {
+                            "name": "UploadComponent"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "IvrConfigComponent",
+            "children": [
+                {
+                    "name": "RadioBtnComponent"
+                }
+            ]
+        },
+        {
+            "name": "JourneyCopyComponent",
+            "children": [
+                {
+                    "name": "CxBuilderComponent",
+                    "children": [
+                        {
+                            "name": "JourneyListComponent",
+                            "children": [
+                                {
+                                    "name": "SearchBarComponent"
+                                },
+                                {
+                                    "name": "ColumnSortIconComponent"
+                                },
+                                {
+                                    "name": "JourneySummaryComponent",
+                                    "children": [
+                                        {
+                                            "name": "SpinnerComponent"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "SpinnerComponent"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "JourneyDelayComponent",
+            "children": [
+                {
+                    "name": "BoxMenuComponent"
+                }
+            ]
+        },
+        {
+            "name": "JourneyGroupContainerComponent",
+            "children": [
+                {
+                    "name": "JourneyItemComponent",
+                    "children": [
+                        {
+                            "name": "JourneyItemDetailComponent",
+                            "children": [
+                                {
+                                    "name": "JourneyItemDetailGridViewComponent",
+                                    "children": [
+                                        {
+                                            "name": "StepActionComponent"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "JourneyItemDetailListViewComponent"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "JourneyItemComponent",
+            "children": [
+                {
+                    "name": "JourneyItemDetailComponent"
+                }
+            ]
+        },
+        {
+            "name": "JourneyItemDetailGridViewComponent",
+            "children": [
+                {
+                    "name": "StepActionComponent"
+                }
+            ]
+        },
+        {
+            "name": "JourneyMetadataPageComponent",
+            "children": [
+                {
+                    "name": "JourneyMetadataDialogComponent",
+                    "children": [
+                        {
+                            "name": "TextInputComponent"
+                        },
+                        {
+                            "name": "JourneyMetadataProductSelectComponent"
+                        },
+                        {
+                            "name": "RadioBtnComponent"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "JourneySummaryComponent",
+            "children": [
+                {
+                    "name": "SpinnerComponent"
+                }
+            ]
+        },
+        {
+            "name": "JourneyTriggerComponent",
+            "children": [
+                {
+                    "name": "BoxMenuComponent"
+                }
+            ]
+        },
+        {
+            "name": "KeyConfigComponent",
+            "children": [
+                {
+                    "name": "UploadComponent"
+                }
+            ]
+        },
+        {
+            "name": "LoginPreviewComponent",
+            "children": [
+                {
+                    "name": "BannerPreviewComponent"
+                }
+            ]
+        },
+        {
+            "name": "MessageCopyComponent",
+            "children": [
+                {
+                    "name": "CxBuilderComponent",
+                    "children": [
+                        {
+                            "name": "JourneyListComponent",
+                            "children": [
+                                {
+                                    "name": "SearchBarComponent"
+                                },
+                                {
+                                    "name": "ColumnSortIconComponent"
+                                },
+                                {
+                                    "name": "JourneySummaryComponent",
+                                    "children": [
+                                        {
+                                            "name": "SpinnerComponent"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "SpinnerComponent"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "PasswordPreviewComponent",
+            "children": [
+                {
+                    "name": "BannerPreviewComponent"
+                }
+            ]
+        },
+        {
+            "name": "PerformanceComponent",
+            "children": [
+                {
+                    "name": "TabBarComponent"
+                }
+            ]
+        },
+        {
+            "name": "ProductGroupsComponent",
+            "children": [
+                {
+                    "name": "ClientHeaderComponent"
+                }
+            ]
+        },
+        {
+            "name": "ProductGroupsEditComponent",
+            "children": [
+                {
+                    "name": "ProductInfoComponent",
+                    "children": [
+                        {
+                            "name": "ClientHeaderComponent"
+                        },
+                        {
+                            "name": "TextInputComponent"
+                        },
+                        {
+                            "name": "InputInfoBoxComponent"
+                        },
+                        {
+                            "name": "HelpTextComponent"
+                        },
+                        {
+                            "name": "ContactInfoInputsComponent"
+                        },
+                        {
+                            "name": "ImageInputComponent",
+                            "children": [
+                                {
+                                    "name": "AddMediaAssetComponent",
+                                    "children": [
+                                        {
+                                            "name": "VideoComponent"
+                                        },
+                                        {
+                                            "name": "UploadComponent"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ColorPickerComponent"
+                        },
+                        {
+                            "name": "WireHeaderComponent"
+                        },
+                        {
+                            "name": "NetworkComponent"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ScheduledJobRowComponent",
+            "children": [
+                {
+                    "name": "MessageDialogComponent"
+                }
+            ]
+        },
+        {
+            "name": "SetupContainerComponent",
+            "children": [
+                {
+                    "name": "BreadcrumbsComponent"
+                }
+            ]
+        },
+        {
             "name": "ToolbarComponent",
             "children": [
                 {
                     "name": "JourneyInspectorComponent"
-                },
-                {
-                    "name": "MessageInspectorComponent"
-                },
-                {
-                    "name": "DelayInspectorComponent"
-                },
-                {
-                    "name": "TriggerInspectorComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
                 }
             ]
         },
@@ -2403,7 +787,12 @@
                     "name": "PhoneComponent",
                     "children": [
                         {
-                            "name": "WirePreviewComponent"
+                            "name": "WirePreviewComponent",
+                            "children": [
+                                {
+                                    "name": "VideoComponent"
+                                }
+                            ]
                         },
                         {
                             "name": "BubbleComponent"
@@ -2424,46 +813,6 @@
             ]
         },
         {
-            "name": "UnassignedComponent",
-            "children": [
-                {
-                    "name": "SpinnerComponent"
-                }
-            ]
-        },
-        {
-            "name": "UploadComponent",
-            "children": []
-        },
-        {
-            "name": "UploadDropAreaComponent",
-            "children": []
-        },
-        {
-            "name": "UploadProgressComponent",
-            "children": []
-        },
-        {
-            "name": "UserEditComponent",
-            "children": [
-                {
-                    "name": "SpinnerComponent"
-                },
-                {
-                    "name": "TextInputComponent"
-                },
-                {
-                    "name": "InputInfoBoxComponent"
-                },
-                {
-                    "name": "UserResetComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
-                }
-            ]
-        },
-        {
             "name": "UserEditPageComponent",
             "children": [
                 {
@@ -2480,34 +829,8 @@
                         },
                         {
                             "name": "UserResetComponent"
-                        },
-                        {
-                            "name": "MessageDialogComponent"
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "name": "UserListComponent",
-            "children": [
-                {
-                    "name": "SearchBarComponent"
-                },
-                {
-                    "name": "ColumnSortIconComponent"
-                },
-                {
-                    "name": "CheckboxComponent"
-                },
-                {
-                    "name": "SpinnerComponent"
-                },
-                {
-                    "name": "UserResetComponent"
-                },
-                {
-                    "name": "MessageDialogComponent"
                 }
             ]
         },
@@ -2531,6 +854,110 @@
                         },
                         {
                             "name": "UserResetComponent"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "WirePreviewComponent",
+            "children": [
+                {
+                    "name": "VideoComponent"
+                }
+            ]
+        },
+        {
+            "name": "AddMediaAssetComponent",
+            "children": [
+                {
+                    "name": "VideoComponent"
+                },
+                {
+                    "name": "UploadComponent"
+                }
+            ]
+        },
+        {
+            "name": "AgentJourneySelectComponent",
+            "children": [
+                {
+                    "name": "JourneyIconComponent"
+                },
+                {
+                    "name": "RemoveJourneyModalComponent"
+                }
+            ]
+        },
+        {
+            "name": "ClientConfigContainerComponent",
+            "children": [
+                {
+                    "name": "ProgressTabsComponent"
+                },
+                {
+                    "name": "BreadcrumbsComponent"
+                }
+            ]
+        },
+        {
+            "name": "ClientImagesNewComponent",
+            "children": [
+                {
+                    "name": "ClientHeaderComponent"
+                },
+                {
+                    "name": "ImageInputComponent",
+                    "children": [
+                        {
+                            "name": "AddMediaAssetComponent",
+                            "children": [
+                                {
+                                    "name": "VideoComponent"
+                                },
+                                {
+                                    "name": "UploadComponent"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ClientInfoEditComponent",
+            "children": [
+                {
+                    "name": "ClientHeaderComponent"
+                },
+                {
+                    "name": "TextInputComponent"
+                }
+            ]
+        },
+        {
+            "name": "FileLauncherPageComponent",
+            "children": [
+                {
+                    "name": "ProgressTabsComponent"
+                },
+                {
+                    "name": "FileLauncherComponent",
+                    "children": [
+                        {
+                            "name": "UploadDropAreaComponent"
+                        },
+                        {
+                            "name": "UploadProgressComponent"
+                        },
+                        {
+                            "name": "LaunchChoiceComponent"
+                        },
+                        {
+                            "name": "ScheduleLaunchDialogComponent"
+                        },
+                        {
+                            "name": "LaunchResultComponent"
                         },
                         {
                             "name": "MessageDialogComponent"
@@ -2540,12 +967,494 @@
             ]
         },
         {
-            "name": "UserResetComponent",
-            "children": []
+            "name": "JourneyItemDetailComponent",
+            "children": [
+                {
+                    "name": "JourneyItemDetailGridViewComponent",
+                    "children": [
+                        {
+                            "name": "StepActionComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "JourneyItemDetailListViewComponent"
+                }
+            ]
         },
         {
-            "name": "ValidationFieldsListComponent",
-            "children": []
+            "name": "JourneyStepPreviewComponent",
+            "children": [
+                {
+                    "name": "StepActionComponent"
+                },
+                {
+                    "name": "MessageDialogComponent"
+                }
+            ]
+        },
+        {
+            "name": "MessageWindowComponent",
+            "children": [
+                {
+                    "name": "AgentMessageComponent"
+                },
+                {
+                    "name": "CustomerMessageComponent"
+                }
+            ]
+        },
+        {
+            "name": "ProcessedJobsComponent",
+            "children": [
+                {
+                    "name": "ColumnSortIconComponent"
+                },
+                {
+                    "name": "ProcessedJobRowComponent"
+                }
+            ]
+        },
+        {
+            "name": "ScheduledJobsComponent",
+            "children": [
+                {
+                    "name": "ColumnSortIconComponent"
+                },
+                {
+                    "name": "ScheduledJobRowComponent",
+                    "children": [
+                        {
+                            "name": "MessageDialogComponent"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ClientConfigReportComponent",
+            "children": [
+                {
+                    "name": "WireHeaderComponent"
+                },
+                {
+                    "name": "NetworkComponent"
+                },
+                {
+                    "name": "ProductReportComponent",
+                    "children": [
+                        {
+                            "name": "WireHeaderComponent"
+                        },
+                        {
+                            "name": "NetworkComponent"
+                        },
+                        {
+                            "name": "ProductContactInfoRowComponent"
+                        },
+                        {
+                            "name": "ProductLegalGenericComponent"
+                        },
+                        {
+                            "name": "ProductOnboardingFieldsRowComponent"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ClientInfoNewComponent",
+            "children": [
+                {
+                    "name": "ClientHeaderComponent"
+                },
+                {
+                    "name": "TextInputComponent"
+                },
+                {
+                    "name": "InputInfoBoxComponent"
+                }
+            ]
+        },
+        {
+            "name": "ClientInputsNewComponent",
+            "children": [
+                {
+                    "name": "ClientHeaderComponent"
+                },
+                {
+                    "name": "BlackoutSelectComponent",
+                    "children": [
+                        {
+                            "name": "RadioBtnComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "RadioBtnComponent"
+                }
+            ]
+        },
+        {
+            "name": "ControlTagsComponent",
+            "children": [
+                {
+                    "name": "SpinnerComponent"
+                },
+                {
+                    "name": "EditableListComponent",
+                    "children": [
+                        {
+                            "name": "AutocompleteComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "MessageDialogComponent"
+                }
+            ]
+        },
+        {
+            "name": "JourneyMetadataDialogComponent",
+            "children": [
+                {
+                    "name": "TextInputComponent"
+                },
+                {
+                    "name": "JourneyMetadataProductSelectComponent"
+                },
+                {
+                    "name": "RadioBtnComponent"
+                }
+            ]
+        },
+        {
+            "name": "JourneyPreviewComponent",
+            "children": [
+                {
+                    "name": "PhoneComponent"
+                },
+                {
+                    "name": "JourneyArrowComponent"
+                },
+                {
+                    "name": "DelayComponent"
+                }
+            ]
+        },
+        {
+            "name": "MediaListComponent",
+            "children": [
+                {
+                    "name": "ColumnSortIconComponent"
+                },
+                {
+                    "name": "AddMediaAssetComponent",
+                    "children": [
+                        {
+                            "name": "VideoComponent"
+                        },
+                        {
+                            "name": "UploadComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "EditMediaAssetDetailsComponent",
+                    "children": [
+                        {
+                            "name": "VideoComponent"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "MonitorComponent",
+            "children": [
+                {
+                    "name": "TabBarComponent"
+                },
+                {
+                    "name": "ProcessedJobsComponent",
+                    "children": [
+                        {
+                            "name": "ColumnSortIconComponent"
+                        },
+                        {
+                            "name": "ProcessedJobRowComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "ScheduledJobsComponent",
+                    "children": [
+                        {
+                            "name": "ColumnSortIconComponent"
+                        },
+                        {
+                            "name": "ScheduledJobRowComponent",
+                            "children": [
+                                {
+                                    "name": "MessageDialogComponent"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "PhoneComponent",
+            "children": [
+                {
+                    "name": "WirePreviewComponent",
+                    "children": [
+                        {
+                            "name": "VideoComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "BubbleComponent"
+                },
+                {
+                    "name": "PhoneComponent"
+                }
+            ]
+        },
+        {
+            "name": "ProductGroupFeaturesComponent",
+            "children": [
+                {
+                    "name": "ClientHeaderComponent"
+                },
+                {
+                    "name": "RadioBtnComponent"
+                },
+                {
+                    "name": "PasswordPreviewComponent",
+                    "children": [
+                        {
+                            "name": "BannerPreviewComponent"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ProductLegalComponent",
+            "children": [
+                {
+                    "name": "ClientHeaderComponent"
+                },
+                {
+                    "name": "RadioBtnComponent"
+                },
+                {
+                    "name": "TextInputComponent"
+                }
+            ]
+        },
+        {
+            "name": "QuickLaunchComponent",
+            "children": [
+                {
+                    "name": "QuickLaunchContentComponent",
+                    "children": [
+                        {
+                            "name": "JourneyIconComponent"
+                        },
+                        {
+                            "name": "PhoneComponent",
+                            "children": [
+                                {
+                                    "name": "WirePreviewComponent",
+                                    "children": [
+                                        {
+                                            "name": "VideoComponent"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "BubbleComponent"
+                                },
+                                {
+                                    "name": "PhoneComponent"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "MessageDialogComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "TestLauncherComponent",
+                    "children": [
+                        {
+                            "name": "TriggerSelectorComponent",
+                            "children": [
+                                {
+                                    "name": "PhoneComponent",
+                                    "children": [
+                                        {
+                                            "name": "WirePreviewComponent",
+                                            "children": [
+                                                {
+                                                    "name": "VideoComponent"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "BubbleComponent"
+                                        },
+                                        {
+                                            "name": "PhoneComponent"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "JourneyLaunchedComponent"
+                        },
+                        {
+                            "name": "CxBuilderComponent",
+                            "children": [
+                                {
+                                    "name": "JourneyListComponent",
+                                    "children": [
+                                        {
+                                            "name": "SearchBarComponent"
+                                        },
+                                        {
+                                            "name": "ColumnSortIconComponent"
+                                        },
+                                        {
+                                            "name": "JourneySummaryComponent",
+                                            "children": [
+                                                {
+                                                    "name": "SpinnerComponent"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "SpinnerComponent"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MessageDialogComponent"
+                }
+            ]
+        },
+        {
+            "name": "QuickLaunchContentComponent",
+            "children": [
+                {
+                    "name": "JourneyIconComponent"
+                },
+                {
+                    "name": "PhoneComponent",
+                    "children": [
+                        {
+                            "name": "WirePreviewComponent",
+                            "children": [
+                                {
+                                    "name": "VideoComponent"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "BubbleComponent"
+                        },
+                        {
+                            "name": "PhoneComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "MessageDialogComponent"
+                }
+            ]
+        },
+        {
+            "name": "SetupUsersComponent",
+            "children": [
+                {
+                    "name": "UserListComponent"
+                },
+                {
+                    "name": "MessageDialogComponent"
+                },
+                {
+                    "name": "UserEditComponent"
+                }
+            ]
+        },
+        {
+            "name": "TestLauncherComponent",
+            "children": [
+                {
+                    "name": "TriggerSelectorComponent",
+                    "children": [
+                        {
+                            "name": "PhoneComponent",
+                            "children": [
+                                {
+                                    "name": "WirePreviewComponent",
+                                    "children": [
+                                        {
+                                            "name": "VideoComponent"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "BubbleComponent"
+                                },
+                                {
+                                    "name": "PhoneComponent"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "JourneyLaunchedComponent"
+                },
+                {
+                    "name": "CxBuilderComponent",
+                    "children": [
+                        {
+                            "name": "JourneyListComponent",
+                            "children": [
+                                {
+                                    "name": "SearchBarComponent"
+                                },
+                                {
+                                    "name": "ColumnSortIconComponent"
+                                },
+                                {
+                                    "name": "JourneySummaryComponent",
+                                    "children": [
+                                        {
+                                            "name": "SpinnerComponent"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "SpinnerComponent"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
             "name": "VerificationComponent",
@@ -2558,25 +1467,437 @@
                 },
                 {
                     "name": "InputInfoBoxComponent"
-                },
-                {
-                    "name": "TinyEditorComponent"
                 }
             ]
         },
         {
-            "name": "VideoComponent",
-            "children": []
-        },
-        {
-            "name": "WireHeaderComponent",
-            "children": []
-        },
-        {
-            "name": "WirePreviewComponent",
+            "name": "ClientValidationAndVerificationComponent",
             "children": [
                 {
+                    "name": "ClientHeaderComponent"
+                },
+                {
+                    "name": "OnboardingToggleComponent"
+                },
+                {
+                    "name": "ValidationFieldsListComponent"
+                },
+                {
+                    "name": "ClientMobileMessageVerificationComponent"
+                }
+            ]
+        },
+        {
+            "name": "CustomerListComponent",
+            "children": [
+                {
+                    "name": "SearchBarComponent"
+                },
+                {
+                    "name": "ColumnSortIconComponent"
+                },
+                {
+                    "name": "SpinnerComponent"
+                },
+                {
+                    "name": "MessageDialogComponent"
+                }
+            ]
+        },
+        {
+            "name": "JourneyListComponent",
+            "children": [
+                {
+                    "name": "SearchBarComponent"
+                },
+                {
+                    "name": "ColumnSortIconComponent"
+                },
+                {
+                    "name": "JourneySummaryComponent",
+                    "children": [
+                        {
+                            "name": "SpinnerComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "SpinnerComponent"
+                }
+            ]
+        },
+        {
+            "name": "JourneyMessageComponent",
+            "children": [
+                {
+                    "name": "BoxMenuComponent"
+                },
+                {
                     "name": "VideoComponent"
+                },
+                {
+                    "name": "StepActionComponent"
+                },
+                {
+                    "name": "JourneyMessageComponent",
+                    "children": [
+                        {
+                            "name": "BoxMenuComponent"
+                        },
+                        {
+                            "name": "VideoComponent"
+                        },
+                        {
+                            "name": "StepActionComponent"
+                        },
+                        {
+                            "name": "JourneyMessageComponent"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "JourneyPdfPreviewComponent",
+            "children": [
+                {
+                    "name": "ColorPickerComponent"
+                },
+                {
+                    "name": "PhoneComponent",
+                    "children": [
+                        {
+                            "name": "WirePreviewComponent",
+                            "children": [
+                                {
+                                    "name": "VideoComponent"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "BubbleComponent"
+                        },
+                        {
+                            "name": "PhoneComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "JourneyArrowComponent"
+                },
+                {
+                    "name": "MessageDialogComponent"
+                }
+            ]
+        },
+        {
+            "name": "SetupSmsPingComponent",
+            "children": [
+                {
+                    "name": "SpinnerComponent"
+                },
+                {
+                    "name": "BubbleComponent"
+                },
+                {
+                    "name": "SmsBuilderComponent"
+                },
+                {
+                    "name": "MessageDialogComponent"
+                }
+            ]
+        },
+        {
+            "name": "SetupSummaryComponent",
+            "children": [
+                {
+                    "name": "SpinnerComponent"
+                },
+                {
+                    "name": "WireHeaderComponent"
+                },
+                {
+                    "name": "TwoWayPreviewComponent",
+                    "children": [
+                        {
+                            "name": "BubbleComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "BubbleComponent"
+                }
+            ]
+        },
+        {
+            "name": "UserEditComponent",
+            "children": [
+                {
+                    "name": "SpinnerComponent"
+                },
+                {
+                    "name": "TextInputComponent"
+                },
+                {
+                    "name": "InputInfoBoxComponent"
+                },
+                {
+                    "name": "UserResetComponent"
+                }
+            ]
+        },
+        {
+            "name": "AgentOnboardingConfigComponent",
+            "children": [
+                {
+                    "name": "OnboardingToggleComponent"
+                },
+                {
+                    "name": "AgentJourneySelectComponent",
+                    "children": [
+                        {
+                            "name": "JourneyIconComponent"
+                        },
+                        {
+                            "name": "RemoveJourneyModalComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "AgentExpressConsentComponent"
+                },
+                {
+                    "name": "AgentValidationComponent"
+                },
+                {
+                    "name": "QuickLaunchContentComponent",
+                    "children": [
+                        {
+                            "name": "JourneyIconComponent"
+                        },
+                        {
+                            "name": "PhoneComponent",
+                            "children": [
+                                {
+                                    "name": "WirePreviewComponent",
+                                    "children": [
+                                        {
+                                            "name": "VideoComponent"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "BubbleComponent"
+                                },
+                                {
+                                    "name": "PhoneComponent"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "MessageDialogComponent"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "JourneyBrowserComponent",
+            "children": [
+                {
+                    "name": "SearchInputComponent"
+                },
+                {
+                    "name": "GroupByComponent"
+                },
+                {
+                    "name": "SelectComponent"
+                },
+                {
+                    "name": "TagFilterListComponent"
+                },
+                {
+                    "name": "JourneyGroupContainerComponent",
+                    "children": [
+                        {
+                            "name": "JourneyItemComponent",
+                            "children": [
+                                {
+                                    "name": "JourneyItemDetailComponent",
+                                    "children": [
+                                        {
+                                            "name": "JourneyItemDetailGridViewComponent",
+                                            "children": [
+                                                {
+                                                    "name": "StepActionComponent"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "JourneyItemDetailListViewComponent"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "MessagingComponent",
+            "children": [
+                {
+                    "name": "TagSelectComponent"
+                },
+                {
+                    "name": "LaunchSelectComponent"
+                },
+                {
+                    "name": "AssignedComponent"
+                },
+                {
+                    "name": "UnassignedComponent"
+                },
+                {
+                    "name": "CustomerDetailsComponent"
+                }
+            ]
+        },
+        {
+            "name": "ProductOnboardingComponent",
+            "children": [
+                {
+                    "name": "ClientHeaderComponent"
+                },
+                {
+                    "name": "RadioBtnComponent"
+                },
+                {
+                    "name": "JourneyListComponent",
+                    "children": [
+                        {
+                            "name": "SearchBarComponent"
+                        },
+                        {
+                            "name": "ColumnSortIconComponent"
+                        },
+                        {
+                            "name": "JourneySummaryComponent",
+                            "children": [
+                                {
+                                    "name": "SpinnerComponent"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "SpinnerComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "GenericPhoneComponent"
+                },
+                {
+                    "name": "LoginPreviewComponent",
+                    "children": [
+                        {
+                            "name": "BannerPreviewComponent"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ProductReportComponent",
+            "children": [
+                {
+                    "name": "WireHeaderComponent"
+                },
+                {
+                    "name": "NetworkComponent"
+                },
+                {
+                    "name": "ProductContactInfoRowComponent"
+                },
+                {
+                    "name": "ProductLegalGenericComponent"
+                },
+                {
+                    "name": "ProductOnboardingFieldsRowComponent"
+                }
+            ]
+        },
+        {
+            "name": "SetupAutoResponseComponent",
+            "children": [
+                {
+                    "name": "SpinnerComponent"
+                },
+                {
+                    "name": "WireHeaderComponent"
+                },
+                {
+                    "name": "TwoWayPreviewComponent",
+                    "children": [
+                        {
+                            "name": "BubbleComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "BlackoutSelectComponent",
+                    "children": [
+                        {
+                            "name": "RadioBtnComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "MessageDialogComponent"
+                }
+            ]
+        },
+        {
+            "name": "UserListComponent",
+            "children": [
+                {
+                    "name": "SearchBarComponent"
+                },
+                {
+                    "name": "ColumnSortIconComponent"
+                },
+                {
+                    "name": "CheckboxComponent"
+                },
+                {
+                    "name": "SpinnerComponent"
+                },
+                {
+                    "name": "UserResetComponent"
+                }
+            ]
+        },
+        {
+            "name": "FileLauncherComponent",
+            "children": [
+                {
+                    "name": "UploadDropAreaComponent"
+                },
+                {
+                    "name": "UploadProgressComponent"
+                },
+                {
+                    "name": "LaunchChoiceComponent"
+                },
+                {
+                    "name": "ScheduleLaunchDialogComponent"
+                },
+                {
+                    "name": "LaunchResultComponent"
+                },
+                {
+                    "name": "MessageDialogComponent"
                 }
             ]
         },
@@ -2590,7 +1911,12 @@
                             "name": "PhoneComponent",
                             "children": [
                                 {
-                                    "name": "WirePreviewComponent"
+                                    "name": "WirePreviewComponent",
+                                    "children": [
+                                        {
+                                            "name": "VideoComponent"
+                                        }
+                                    ]
                                 },
                                 {
                                     "name": "BubbleComponent"
@@ -2635,13 +1961,323 @@
                     ]
                 },
                 {
-                    "name": "JourneyLaunchedComponent"
+                    "name": "MessageDialogComponent"
+                }
+            ]
+        },
+        {
+            "name": "ClientOnboardingAndFeatureComponent",
+            "children": [
+                {
+                    "name": "JourneyListComponent",
+                    "children": [
+                        {
+                            "name": "SearchBarComponent"
+                        },
+                        {
+                            "name": "ColumnSortIconComponent"
+                        },
+                        {
+                            "name": "JourneySummaryComponent",
+                            "children": [
+                                {
+                                    "name": "SpinnerComponent"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "SpinnerComponent"
+                        }
+                    ]
                 },
                 {
-                    "name": "ScheduleLaunchDialogComponent"
+                    "name": "ClientHeaderComponent"
+                },
+                {
+                    "name": "RadioBtnComponent"
+                },
+                {
+                    "name": "OnboardingToggleComponent"
+                },
+                {
+                    "name": "IvrConfigComponent",
+                    "children": [
+                        {
+                            "name": "RadioBtnComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "AgentOnboardingConfigComponent",
+                    "children": [
+                        {
+                            "name": "OnboardingToggleComponent"
+                        },
+                        {
+                            "name": "AgentJourneySelectComponent",
+                            "children": [
+                                {
+                                    "name": "JourneyIconComponent"
+                                },
+                                {
+                                    "name": "RemoveJourneyModalComponent"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "AgentExpressConsentComponent"
+                        },
+                        {
+                            "name": "AgentValidationComponent"
+                        },
+                        {
+                            "name": "QuickLaunchContentComponent",
+                            "children": [
+                                {
+                                    "name": "JourneyIconComponent"
+                                },
+                                {
+                                    "name": "PhoneComponent",
+                                    "children": [
+                                        {
+                                            "name": "WirePreviewComponent",
+                                            "children": [
+                                                {
+                                                    "name": "VideoComponent"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "BubbleComponent"
+                                        },
+                                        {
+                                            "name": "PhoneComponent"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "MessageDialogComponent"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "FileProcessingConfigComponent",
+                    "children": [
+                        {
+                            "name": "TimeWindowSelectComponent"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "JobsListComponent",
+            "children": [
+                {
+                    "name": "SearchInputComponent"
+                },
+                {
+                    "name": "SelectComponent"
+                },
+                {
+                    "name": "TagFilterListComponent"
+                },
+                {
+                    "name": "StatusComponent"
+                },
+                {
+                    "name": "JobsListDetailComponent"
                 },
                 {
                     "name": "MessageDialogComponent"
+                },
+                {
+                    "name": "ScheduleLaunchDialogComponent"
+                }
+            ]
+        },
+        {
+            "name": "MessageBuilderComponent",
+            "children": [
+                {
+                    "name": "PhoneComponent",
+                    "children": [
+                        {
+                            "name": "WirePreviewComponent",
+                            "children": [
+                                {
+                                    "name": "VideoComponent"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "BubbleComponent"
+                        },
+                        {
+                            "name": "PhoneComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "RadioBtnComponent"
+                },
+                {
+                    "name": "VideoComponent"
+                },
+                {
+                    "name": "ActionComponent",
+                    "children": [
+                        {
+                            "name": "SpinnerComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "SmsBuilderComponent"
+                },
+                {
+                    "name": "AddMediaAssetComponent",
+                    "children": [
+                        {
+                            "name": "VideoComponent"
+                        },
+                        {
+                            "name": "UploadComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "MessageDialogComponent"
+                }
+            ]
+        },
+        {
+            "name": "JourneyBuilderComponent",
+            "children": [
+                {
+                    "name": "ToolbarComponent",
+                    "children": [
+                        {
+                            "name": "JourneyInspectorComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "JourneyMetadataDialogComponent",
+                    "children": [
+                        {
+                            "name": "TextInputComponent"
+                        },
+                        {
+                            "name": "JourneyMetadataProductSelectComponent"
+                        },
+                        {
+                            "name": "RadioBtnComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "JourneyTriggerComponent",
+                    "children": [
+                        {
+                            "name": "BoxMenuComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "JourneyArrowComponent"
+                },
+                {
+                    "name": "JourneyMessageComponent",
+                    "children": [
+                        {
+                            "name": "BoxMenuComponent"
+                        },
+                        {
+                            "name": "VideoComponent"
+                        },
+                        {
+                            "name": "StepActionComponent"
+                        },
+                        {
+                            "name": "JourneyMessageComponent",
+                            "children": [
+                                {
+                                    "name": "BoxMenuComponent"
+                                },
+                                {
+                                    "name": "VideoComponent"
+                                },
+                                {
+                                    "name": "StepActionComponent"
+                                },
+                                {
+                                    "name": "JourneyMessageComponent"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "JourneyDelayComponent",
+                    "children": [
+                        {
+                            "name": "BoxMenuComponent"
+                        }
+                    ]
+                },
+                {
+                    "name": "JourneyStopComponent"
+                },
+                {
+                    "name": "MessageDialogComponent"
+                }
+            ]
+        },
+        {
+            "name": "ProductInfoComponent",
+            "children": [
+                {
+                    "name": "ClientHeaderComponent"
+                },
+                {
+                    "name": "TextInputComponent"
+                },
+                {
+                    "name": "InputInfoBoxComponent"
+                },
+                {
+                    "name": "HelpTextComponent"
+                },
+                {
+                    "name": "ContactInfoInputsComponent"
+                },
+                {
+                    "name": "ImageInputComponent",
+                    "children": [
+                        {
+                            "name": "AddMediaAssetComponent",
+                            "children": [
+                                {
+                                    "name": "VideoComponent"
+                                },
+                                {
+                                    "name": "UploadComponent"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "ColorPickerComponent"
+                },
+                {
+                    "name": "WireHeaderComponent"
+                },
+                {
+                    "name": "NetworkComponent"
                 }
             ]
         }

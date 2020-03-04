@@ -55,7 +55,7 @@ class ComponentDataList {
     }
 
     /*
-        regex looks like: /<(selector-1|selector-2|selector-3|selector-4|selector-5)/g 
+        resulting regex looks like: /<(selector-1|selector-2|selector-3|selector-4|selector-5)\s/g 
     */
     getSelectorsRegex () {
         const processSelectors = _.flow(
@@ -64,7 +64,7 @@ class ComponentDataList {
             _.partialRight(_.join, '|'), // join selectors together with pipes: my-selector|my-selector-2|my-selector-3
             _.partialRight(_.replace, /-/g, '\-'), // escape hyphens for RegExp: my\-selector|my\-selector\-2|my\-selector\-3
         );
-        return new RegExp(`<(${processSelectors(this.list)})`, 'g'); 
+        return new RegExp(`<(${processSelectors(this.list)})\\s`, 'g');  // match out to a space, ex: to ensure the entry for 'app-quick-launch' doesn't match 'app-quick-launch-content'
     }
 
     getDataByTemplate (templatePath) {
@@ -72,6 +72,7 @@ class ComponentDataList {
     }
 
     getDataByName (name) {
+        if (name === 'QuickLaunchContentComponent') { console.log('') }
         return _.find(this.list, (data) => data.name === name);
     }
 
@@ -94,8 +95,8 @@ class ComponentDataList {
 
     _sort(list) {
         return _.flow(
-            (list) => _.sortBy(list, (listItem) => listItem.children.length),
             (list) => _.sortBy(list, 'name'),
+            (list) => _.sortBy(list, (listItem) => listItem.children.length),
         )(list); // sort by fewest shildren, and the aplhabetically by name
     }
     
@@ -136,12 +137,12 @@ class ComponentDataList {
     }
 
     // for debugging only
-    _asJson() {
+    asJson() {
         return JSON.stringify(this.list, null, 4);
     }
 
     // for debugging only
-    _find(componentName) {
+    find(componentName) {
         return _.find(this.list, (node) => node.name === componentName);
     }
 };
