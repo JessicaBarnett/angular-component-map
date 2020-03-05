@@ -312,9 +312,15 @@ const buildTree = (app) => {
                                 console.log(`building trees...`);
                                 allComponents.createTrees();
                                 console.log(`writing to file...`)
+                                
+                                /* ensure `/public/data` exists */
+                                fs.mkdir('public/data', { recursive: true }, (err) => {
+                                    if (err) throw err;
+                                });
+
                                 /*  writes data in a hirearchical format to match d3.hirearchy's needs: https://github.com/d3/d3-hierarchy#hierarchy */
-                                fs.writeFile(`./public/data/${app}-data.json`, allComponents.treeAsJson(), () => {
-                                    console.log(`All done!  File written to ./public/data/${app}-data.json`);
+                                fs.writeFile(`public/data/${app}-data.json`, allComponents.treeAsJson(), () => {
+                                    console.log(`All done!  File written to /public/data/${app}-data.json`);
                                 });
                             }); 
                 })
