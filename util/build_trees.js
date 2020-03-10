@@ -46,11 +46,12 @@ const componentNameRegex = /export\sclass\s(.+?)\s+[i|{|e]/;  // matches "export
 
 class ComponentData {
     constructor(data) {
-        const { selector, name, templatePath, controllerPath, children, tree } = data;
+        const { selector, name, templatePath, controllerPath, children, tree, count } = data;
         this.selector = selector || undefined ; // string
         this.name = name || undefined; // string
         this.templatePath = templatePath || undefined; // string
         this.controllerPath = controllerPath || undefined; // string
+        this.count = count || 0; // number
         this.children = children || []; // string[]
         this.recursive = false; // true if the component uses its own selector in its template
         this.tree = tree || undefined; // TreeNode[]
@@ -61,6 +62,7 @@ class TreeNode {
     constructor(name, children = [], recursive = false) {
         this.name = name; // string
         this.recursive = recursive; // boolean
+        this.count = count;
 
         if (children && children.length) {
             this.children = children; // TreeNode[]
@@ -153,6 +155,57 @@ class ComponentDataList {
         const sortedGroups = _.map(groups, (group) => _.sortBy(group, 'name')); 
         const sorted = _.flatten(_.values(sortedGroups));
         return sorted;
+    }
+
+    addMetaData() {
+        const counts = this.getCounts(_.map(this.list, 'tree'));
+        _.each(counts, (count, componentName) => {
+            this.find(componentName).count = count;
+        });
+    }
+
+    /* 
+        Returns object with componentNames as keys, and the number of times that component appears in the tree as the value.  Ex: { ComponentA: 2, ComponentB: 2, ComponentC: 20 }
+       
+        Steps: 
+
+        1. initial data
+        
+            [
+                {name: A, children: []},
+                {name: B, children: []},
+                {name: C, children: [
+                    {name: A}, {name: B}
+                },
+                {name: D, children: [
+                    {name: A}, {name: B}, {name: C}
+                ]}
+            ]
+
+        2. Concats contents of all children arrays in tree, at all depths... 
+
+            [{name: A}, {name: B}, {name: A}, {name: B}, {name: C}]
+
+        3. Groups By name
+            {A: [{name: A}, {name: A}], B: [{name: B}, {name: B}], C: [{name: C}]}
+
+        4. counts length of groups and returns object with ComponentName as key, and count as value
+            {A: 2, B: 2, C: 1}
+        
+    */
+    getCounts(treeNodes) {
+        var lastResult = [],
+            nextResult = treeNodes;
+
+        do {
+            lastResult = nextResult;
+            nextResult = _.flatten(_.map(lastResult, (node) => node.children || node))
+        } while (_.xor(lastResult, nextResult).length > 0)
+
+        return _.reduce(_.groupBy(nextResult, 'name'), (result, val, key) => {
+            result[key] = val.length;
+            return result;
+        }, {}); 
     }
 
     treeAsJson() {
@@ -359,6 +412,8 @@ const buildTree = (app) => {
                         .finally(() => {
                                 console.log(`building trees...`);
                                 allComponents.createTrees();
+
+                                allComponents.addMetaData();
                                 console.log(`writing to file...`)
                                 
                                 /* ensure `/public/data` exists */
