@@ -58,8 +58,9 @@ class ComponentData {
 };
 
 class TreeNode {
-    constructor(name, children) {
+    constructor(name, children = [], recursive = false) {
         this.name = name; // string
+        this.recursive = recursive; // boolean
 
         if (children && children.length) {
             this.children = children; // TreeNode[]
@@ -128,7 +129,7 @@ class ComponentDataList {
             const childData = this.getDataByName(childName); // get child data
 
             if (componentData.recursive && childData.name === componentData.name) { // if this is a recursive component inside a recursive component... 
-                return new TreeNode(`${childData.name} (recursive)`); // just say its '(recursive)' and don't bother adding a tree.  
+                return new TreeNode(childData.name, [], true); // mark as recursive and don't add any children
             }
 
             if (childData.tree && childData.tree.length) { // if childData is complete, return a node w/ name and copied tree data (prevents having to recurse again)
@@ -173,7 +174,6 @@ class ComponentDataList {
         return JSON.stringify(this.list, null, 4);
     }
 
-    // for debugging only
     find(componentName) {
         return _.find(this.list, (node) => node.name === componentName);
     }
