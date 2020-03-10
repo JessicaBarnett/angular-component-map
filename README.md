@@ -24,12 +24,11 @@ use one of the 4 scripts in package.json
 
 ## Feature TODO
 1) move the labels with children to the same position as the actual children for better readability
-2) click a component name and highlight/outline all matching component names & subtrees
-3) add more metadata - number of components, depth etc
-4) indicate top-level components (referenced from in routes)
-5) indicate components that aren't used anywhere (like EmptyComponent)
-6) zoom into subtree
-7) testing
+2) add more metadata - number of components, depth, length of ts/html files, number of functions, number of services injected, etc.  make available on click/hover or something.
+3) indicate top-level components (referenced from in routes)
+4) indicate components that aren't used anywhere (like EmptyComponent)
+5) zoom into subtree
+6) testing
 
 ## Test Cases
 1) handle recursive components (ex: PhoneComponent)
